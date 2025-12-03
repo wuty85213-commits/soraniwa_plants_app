@@ -1,0 +1,1172 @@
+[
+  {
+    "id": 1,
+    "name": "アガベ",
+    "description": "乾燥地帯でもたくましく育つ多肉植物",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/agave_st2.webp",
+	"assets/images/plants/agave.webp"]
+  },
+{
+    "id": 1,
+    "name": "アガベ",
+    "description": "乾燥地帯でもたくましく育つ多肉植物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/agave_st2_g.webp",
+	"assets/images/plants/agave_g.webp"]
+  },
+{
+    "id": 1,
+    "name": "アガベ",
+    "description": "乾燥地帯でもたくましく育つ多肉植物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/agave_st2_r.webp",
+	"assets/images/plants/agave_r.webp"]
+  },
+  {
+    "id": 2,
+    "name": "アロエ",
+    "description": "肌を癒やす成分を持つ多肉植物",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/aloe_st2.webp",
+	"assets/images/plants/aloe.webp"]
+  },
+{
+    "id": 2,
+    "name": "アロエ",
+    "description": "肌を癒やす成分を持つ多肉植物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/aloe_st2_g.webp",
+	"assets/images/plants/aloe_g.webp"]
+  },
+{
+    "id": 2,
+    "name": "アロエ",
+    "description": "肌を癒やす成分を持つ多肉植物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/aloe_st2_r.webp",
+	"assets/images/plants/aloe_r.webp"]
+  },
+{
+    "id": 3,
+    "name": "サンスベリア",
+    "description": "スッと立つ葉がかっこいい空気清浄植物",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "leafy", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/sansevieria_st2.webp",
+	"assets/images/plants/sansevieria.webp"]
+  },
+{
+    "id": 3,
+    "name": "サンスベリア",
+    "description": "スッと立つ葉がかっこいい空気清浄植物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "leafy", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/sansevieria_st2_g.webp",
+	"assets/images/plants/sansevieria_g.webp"]
+  },
+{
+    "id": 3,
+    "name": "サンスベリア",
+    "description": "スッと立つ葉がかっこいい空気清浄植物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "leafy", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/sansevieria_st2_r.webp",
+	"assets/images/plants/sansevieria_r.webp"]
+  },
+{
+    "id": 4,
+    "name": "クワズイモ",
+    "description": "大きなハートの葉が目を引く観葉植物",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "leafy", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/alocasia_st2.webp",
+	"assets/images/plants/alocasia.webp"]
+  },
+{
+    "id": 4,
+    "name": "クワズイモ",
+    "description": "大きなハートの葉が目を引く観葉植物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "leafy", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/alocasia_st2_g.webp",
+	"assets/images/plants/alocasia_g.webp"]
+  },
+{
+    "id": 4,
+    "name": "クワズイモ",
+    "description": "大きなハートの葉が目を引く観葉植物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "leafy", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/alocasia_st2_r.webp",
+	"assets/images/plants/alocasia_r.webp"]
+  },
+{
+    "id": 5,
+    "name": "モンステラ",
+    "description": "大きな切れ込み葉が魅力の観葉植物",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/monstera_st2.webp",
+	"assets/images/plants/monstera.webp"]
+  },
+{
+    "id": 5,
+    "name": "モンステラ",
+    "description": "大きな切れ込み葉が魅力の観葉植物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "leafy",
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/monstera_st2_g.webp",
+	"assets/images/plants/monstera_g.webp"]
+  },
+{
+    "id": 5,
+    "name": "モンステラ",
+    "description": "大きな切れ込み葉が魅力の観葉植物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "leafy", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/monstera_st2_r.webp",
+	"assets/images/plants/monstera_r.webp"]
+  },
+{
+    "id": 6,
+    "name": "サボテン",
+    "description": "乾燥地帯でも元気に育つ植物。",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "leafy",
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/cactus_st2.webp",
+	"assets/images/plants/cactus.webp"]
+  },
+{
+    "id": 6,
+    "name": "サボテン",
+    "description": "乾燥地帯でも元気に育つ植物。",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/cactus_st2_g.webp",
+	"assets/images/plants/cactus_g.webp"]
+  },
+{
+    "id": 6,
+    "name": "サボテン",
+    "description": "乾燥地帯でも元気に育つ植物。",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "leafy",
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_a_st1.webp",
+	"assets/images/plants/cactus_st2_r.webp",
+	"assets/images/plants/cactus_r.webp"]
+  },
+ {
+    "id": 7,
+    "name": "ガーベラ",
+    "description": "元気な色で笑顔をくれるお花",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/gerbera_st2.webp",
+	"assets/images/plants/gerbera.webp"]
+  },
+{
+    "id": 7,
+    "name": "ガーベラ",
+    "description": "元気な色で笑顔をくれるお花",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "bloom", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/gerbera_st2.webp",
+	"assets/images/plants/gerbera_g.webp"]
+  },
+{
+    "id": 7,
+    "name": "ガーベラ",
+    "description": "元気な色で笑顔をくれるお花",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/gerbera_st2.webp",
+	"assets/images/plants/gerbera_r.webp"]
+  },
+ {
+    "id": 8,
+    "name": "ユリ",
+    "description": "上品な香りを放つ優雅な花",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/lily_st2.webp",
+	"assets/images/plants/lily.webp"]
+  },
+{
+    "id": 8,
+    "name": "ユリ",
+    "description": "上品な香りを放つ優雅な花",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "bloom", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/lily_st2.webp",
+	"assets/images/plants/lily_g.webp"]
+  },
+{
+    "id": 8,
+    "name": "ユリ",
+    "description": "上品な香りを放つ優雅な花",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/lily_st2.webp",
+	"assets/images/plants/lily_r.webp"]
+  },
+ {
+    "id": 9,
+    "name": "ひまわり",
+    "description": "太陽のようで元気をいっぱいの花",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/starplant_st2.webp",
+	"assets/images/plants/sunflower.webp"]
+  },
+{
+    "id": 9,
+    "name": "ひまわり",
+    "description": "太陽のようで元気をいっぱいの花",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "bloom", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/starplant_st2.webp",
+	"assets/images/plants/sunflower_g.webp"]
+  },
+{
+    "id": 9,
+    "name": "ひまわり",
+    "description": "太陽のようで元気をいっぱいの花",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/starplant_st2.webp",
+	"assets/images/plants/sunflower_r.webp"]
+  },
+ {
+    "id": 10,
+    "name": "チューリップ",
+    "description": "春を彩る色とりどりの花",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/tulip_st2.webp",
+	"assets/images/plants/tulip.webp"]
+  },
+{
+    "id": 10,
+    "name": "チューリップ",
+    "description": "春を彩る色とりどりの花",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "bloom", 
+    "imageRes":  [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/tulip_st2.webp",
+	"assets/images/plants/tulip_g.webp"]
+  },
+{
+    "id": 10,
+    "name": "チューリップ",
+    "description": "春を彩る色とりどりの花",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/tulip_st2.webp",
+	"assets/images/plants/tulip_r.webp"]
+  },
+  {
+    "id": 11,
+    "name": "スタープランツ",
+    "description": "星の形をした不思議な多肉植物。",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute":"bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/starplant_st2.webp",
+	"assets/images/plants/starplant.webp"]
+  },
+{
+    "id": 11,
+    "name": "スタープランツ",
+    "description": "星の形をした不思議な多肉植物。",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute":"bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/starplant_st2.webp",
+	"assets/images/plants/starplant_g.webp"]
+  },
+{
+    "id": 11,
+    "name": "スタープランツ",
+    "description": "星の形をした不思議な多肉植物。",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/starplant_st2.webp",
+	"assets/images/plants/starplant_r.webp"]
+  },
+  {
+    "id": 12,
+    "name": "バラ",
+    "description": "とげのある美しい愛の花",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/rose_st2.webp",
+	"assets/images/plants/rose.webp"]
+  },
+  {
+    "id": 12,
+    "name": "バラ",
+    "description": "とげのある美しい愛の花",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/rose_st2.webp",
+	"assets/images/plants/rose_g.webp"]
+  },
+  {
+    "id": 12,
+    "name": "バラ",
+    "description": "とげのある美しい愛の花",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "bloom", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_b_st1.webp",
+	"assets/images/plants/rose_st2.webp",
+	"assets/images/plants/rose_r.webp"]
+  },
+  {
+    "id": 13,
+    "name": "みかんの木",
+    "description": "あまくてすっぱい冬のくだものの木",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/orange_st2.webp",
+	"assets/images/plants/orange.webp"]
+  },
+  {
+    "id": 13,
+    "name": "みかんの木",
+    "description": "あまくてすっぱい冬のくだものの木",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/orange_st2.webp",
+	"assets/images/plants/orange_g.webp"]
+  },
+  {
+    "id": 13,
+    "name": "みかんの木",
+    "description": "あまくてすっぱい冬のくだものの木",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/orange_st2.webp",
+	"assets/images/plants/orange_r.webp"]
+  },
+  {
+    "id": 14,
+    "name": "レモンの木",
+    "description": "さわやかな香りとすっぱさが人気の果実の木",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/orange_st2.webp",
+	"assets/images/plants/lemon.webp"]
+  },
+  {
+    "id": 14,
+    "name": "レモンの木",
+    "description": "さわやかな香りとすっぱさが人気の果実の木",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/orange_st2.webp",
+	"assets/images/plants/lemon_g.webp"]
+  },
+  {
+    "id": 14,
+    "name": "レモンの木",
+    "description": "さわやかな香りとすっぱさが人気の果実の木",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/orange_st2.webp",
+	"assets/images/plants/lemon_r.webp"]
+  },
+  {
+    "id": 15,
+    "name": "オリーブの木",
+    "description": "平和のシンボルとして知られる木",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/olive_st2.webp",
+	"assets/images/plants/olive.webp"]
+  },
+  {
+    "id": 15,
+    "name": "オリーブの木",
+    "description": "平和のシンボルとして知られる木",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/olive_st2.webp",
+	"assets/images/plants/olive_g.webp"]
+  },
+  {
+    "id": 15,
+    "name": "オリーブの木",
+    "description": "平和のシンボルとして知られる木",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/olive_st2.webp",
+	"assets/images/plants/olive_r.webp"]
+  },
+  {
+    "id": 16,
+    "name": "ココヤシ",
+    "description": "あまくておいしいココナッツがとれる木",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/coco_st2.webp",
+	"assets/images/plants/coco.webp"]
+  },
+  {
+    "id": 16,
+    "name": "ココヤシ",
+    "description": "あまくておいしいココナッツがとれる木",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/coco_st2.webp",
+	"assets/images/plants/coco_g.webp"]
+  },
+  {
+    "id": 16,
+    "name": "ココヤシ",
+    "description": "あまくておいしいココナッツがとれる木",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/coco_st2.webp",
+	"assets/images/plants/coco_r.webp"]
+  },
+  {
+    "id": 17,
+    "name": "松",
+    "description": "冬でも緑を保つ長寿の木",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/pine_st2.webp",
+	"assets/images/plants/pine.webp"]
+  },
+  {
+    "id": 17,
+    "name": "松",
+    "description": "冬でも緑を保つ長寿の木",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/pine_st2_g.webp",
+	"assets/images/plants/pine_g.webp"]
+  },
+  {
+    "id": 17,
+    "name": "松",
+    "description": "冬でも緑を保つ長寿の木",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/pine_st2_r.webp",
+	"assets/images/plants/pine_r.webp"]
+  },
+  {
+    "id": 18,
+    "name": "バオバブ",
+    "description": "太い幹が特徴のさかさまの木",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/baobab_st2.webp",
+	"assets/images/plants/baobab.webp"]
+  },
+  {
+    "id": 18,
+    "name": "バオバブ",
+    "description": "太い幹が特徴のさかさまの木",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/baobab_st2_g.webp",
+	"assets/images/plants/baobab_g.webp"]
+  },
+  {
+    "id": 18,
+    "name": "バオバブ",
+    "description": "太い幹が特徴のさかさまの木",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "tree", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_c_st1.webp",
+	"assets/images/plants/baobab_st2_r.webp",
+	"assets/images/plants/baobab_r.webp"]
+  },
+  {
+    "id": 19,
+    "name": "しいたけ",
+    "description": "うまみたっぷりの森のキノコ",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/shiitake_st2.webp",
+	"assets/images/plants/shiitake.webp"]
+  },
+  {
+    "id": 19,
+    "name": "しいたけ",
+    "description": "うまみたっぷりの森のキノコ",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/shiitake_st2_g.webp",
+	"assets/images/plants/shiitake_g.webp"]
+  },
+  {
+    "id": 19,
+    "name": "しいたけ",
+    "description": "うまみたっぷりの森のキノコ",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/shiitake_st2_r.webp",
+	"assets/images/plants/shiitake_r.webp"]
+  },
+  {
+    "id": 20,
+    "name": "アスパラガス",
+    "description": "すらりと伸びる元気な野菜",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/asparagus_st2.webp",
+	"assets/images/plants/asparagus.webp"]
+  },
+  {
+    "id": 20,
+    "name": "アスパラガス",
+    "description": "すらりと伸びる元気な野菜",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/asparagus_st2_g.webp",
+	"assets/images/plants/asparagus_g.webp"]
+  },
+  {
+    "id": 20,
+    "name": "アスパラガス",
+    "description": "すらりと伸びる元気な野菜",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/asparagus_st2_r.webp",
+	"assets/images/plants/asparagus_r.webp"]
+  },
+  {
+    "id": 21,
+    "name": "まんまるキノコ",
+    "description": "丸い形が特徴のかわいいキノコ",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/mushroom_st2.webp",
+	"assets/images/plants/mushroom.webp"]
+  },
+  {
+    "id": 21,
+    "name": "まんまるキノコ",
+    "description": "丸い形が特徴のかわいいキノコ",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/mushroom_st2_g.webp",
+	"assets/images/plants/mushroom_g.webp"]
+  },
+  {
+    "id": 21,
+    "name": "まんまるキノコ",
+    "description": "丸い形が特徴のかわいいキノコ",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/mushroom_st2_r.webp",
+	"assets/images/plants/mushroom_r.webp"]
+  },
+  {
+    "id": 22,
+    "name": "たけのこ",
+    "description": "竹の子ども、春の味覚",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/bambooshoot_st2.webp",
+	"assets/images/plants/bambooshoot.webp"]
+  },
+  {
+    "id": 22,
+    "name": "たけのこ",
+    "description": "竹の子ども、春の味覚",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/bambooshoot_st2_g.webp",
+	"assets/images/plants/bambooshoot_g.webp"]
+  },
+  {
+    "id": 22,
+    "name": "たけのこ",
+    "description": "竹の子ども、春の味覚",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/bambooshoot_st2_r.webp",
+	"assets/images/plants/bambooshoot_r.webp"]
+  },
+  {
+    "id": 23,
+    "name": "ポルチーニ",
+    "description": "香りがよく人気の高級キノコ",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/porcini_st2.webp",
+	"assets/images/plants/porcini.webp"]
+  },
+  {
+    "id": 23,
+    "name": "ポルチーニ",
+    "description": "香りがよく人気の高級キノコ",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/porcini_st2_g.webp",
+	"assets/images/plants/porcini_g.webp"]
+  },
+  {
+    "id": 23,
+    "name": "ポルチーニ",
+    "description": "香りがよく人気の高級キノコ",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/porcini_st2_r.webp",
+	"assets/images/plants/porcini_r.webp"]
+  },
+  {
+    "id": 24,
+    "name": "ドクツルタケ",
+    "description": "白く美しいけどとても毒のあるキノコ",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/destroyingangel_st2.webp",
+	"assets/images/plants/destroyingangel.webp"]
+  },
+  {
+    "id": 24,
+    "name": "ドクツルタケ",
+    "description": "白く美しいけどとても毒のあるキノコ",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/destroyingangel_st2_g.webp",
+	"assets/images/plants/destroyingangel_g.webp"]
+  },
+  {
+    "id": 24,
+    "name": "ドクツルタケ",
+    "description": "白く美しいけどとても毒のあるキノコ",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "fun", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_d_st1.webp",
+	"assets/images/plants/destroyingangel_st2_r.webp",
+	"assets/images/plants/destroyingangel_r.webp"]
+  },
+  {
+    "id": 25,
+    "name": "かいそう",
+    "description": "海中でゆらめく栄養豊富な植物",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/seaweed_st2.webp",
+	"assets/images/plants/seaweed.webp"]
+  },
+  {
+    "id": 25,
+    "name": "かいそう",
+    "description": "海中でゆらめく栄養豊富な植物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/seaweed_st2_g.webp",
+	"assets/images/plants/seaweed_g.webp"]
+  },
+  {
+    "id": 25,
+    "name": "かいそう",
+    "description": "海中でゆらめく栄養豊富な植物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/seaweed_st2_r.webp",
+	"assets/images/plants/seaweed_r.webp"]
+  },
+  {
+    "id": 26,
+    "name": "ウツボカズラ",
+    "description": "虫をとらえるびっくり植物",
+    "rarity": 1,
+    "variant": "NORMAL",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/nepenthes_st2.webp",
+	"assets/images/plants/nepenthes.webp"]
+  },
+  {
+    "id": 26,
+    "name": "ウツボカズラ",
+    "description": "虫をとらえるびっくり植物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/nepenthes_st2_g.webp",
+	"assets/images/plants/nepenthes_g.webp"]
+  },
+  {
+    "id": 26,
+    "name": "ウツボカズラ",
+    "description": "虫をとらえるびっくり植物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/nepenthes_st2_r.webp",
+	"assets/images/plants/nepenthes_r.webp"]
+  },
+  {
+    "id": 27,
+    "name": "イソギンチャク",
+    "description": "海の中でゆらゆら動く不思議ないきもの",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/seaanemone_st2.webp",
+	"assets/images/plants/seaanemone.webp"]
+  },
+  {
+    "id": 27,
+    "name": "イソギンチャク",
+    "description": "海の中でゆらゆら動く不思議ないきもの",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/seaanemone_st2_g.webp",
+	"assets/images/plants/seaanemone_g.webp"]
+  },
+  {
+    "id": 27,
+    "name": "イソギンチャク",
+    "description": "海の中でゆらゆら動く不思議ないきもの",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/seaanemone_st2_r.webp",
+	"assets/images/plants/seaanemone_r.webp"]
+  },
+  {
+    "id": 28,
+    "name": "チンアナゴ",
+    "description": "砂から顔を出すかわいい海の生き物",
+    "rarity": 2,
+    "variant": "NORMAL",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/eel_st2.webp",
+	"assets/images/plants/eel.webp"]
+  },
+  {
+    "id": 28,
+    "name": "チンアナゴ",
+    "description": "砂から顔を出すかわいい海の生き物",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/eel_st2_g.webp",
+	"assets/images/plants/eel_g.webp"]
+  },
+  {
+    "id": 28,
+    "name": "チンアナゴ",
+    "description": "砂から顔を出すかわいい海の生き物",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/eel_st2_r.webp",
+	"assets/images/plants/eel_r.webp"]
+  },
+  {
+    "id": 29,
+    "name": "ウツボ",
+    "description": "岩のすき間に潜む鋭い歯を持つ魚",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/eel_st2.webp",
+	"assets/images/plants/moray_eel.webp"]
+  },
+  {
+    "id": 29,
+    "name": "ウツボ",
+    "description": "岩のすき間に潜む鋭い歯を持つ魚",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/eel_st2_g.webp",
+	"assets/images/plants/moray_eel_g.webp"]
+  },
+  {
+    "id": 29,
+    "name": "ウツボ",
+    "description": "岩のすき間に潜む鋭い歯を持つ魚",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/eel_st2_r.webp",
+	"assets/images/plants/moray_eel_r.webp"]
+  },
+  {
+    "id": 30,
+    "name": "ラフレシア",
+    "description": "世界一大きな花だけど、においは強烈",
+    "rarity": 3,
+    "variant": "NORMAL",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/rafflesia_st2.webp",
+	"assets/images/plants/rafflesia.webp"]
+  },
+  {
+    "id": 30,
+    "name": "ラフレシア",
+    "description": "世界一大きな花だけど、においは強烈",
+    "rarity": 4,
+    "variant": "GOLD",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/rafflesia_st2_g.webp",
+	"assets/images/plants/rafflesia_g.webp"]
+  },
+  {
+    "id": 30,
+    "name": "ラフレシア",
+    "description": "世界一大きな花だけど、においは強烈！",
+    "rarity": 5,
+    "variant": "RAINBOW",
+    "attribute": "odd", 
+    "imageRes": [
+	"assets/images/plants/st0.webp",
+	"assets/images/plants/seed_e_st1.webp",
+	"assets/images/plants/rafflesia_st2_r.webp",
+	"assets/images/plants/rafflesia_r.webp"]
+  }
+]

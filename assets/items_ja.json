@@ -1,0 +1,264 @@
+[
+  {
+    "id": 101,
+    "name": "観葉植物の種",
+    "description": "植えると観葉植物が生えてくる。",
+    "itemType": "seed",
+    "price": 100,
+    "variant": "NORMAL",
+    "attribute": "leafy",
+    "imageRes": "assets/images/items/seed_a.webp"
+  },
+  {
+    "id": 102,
+    "name": "観葉植物の種（金）",
+    "description": "植えると金色の観葉植物が生えてくる。",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "leafy",
+    "imageRes": "assets/images/items/seed_a_g.webp"
+  },
+  {
+    "id": 103,
+    "name": "観葉植物の種(虹)",
+    "description": "植えると虹色の観葉植物が生えてくる。",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "leafy",
+    "imageRes": "assets/images/items/seed_a_r.webp"
+  },
+  {
+    "id": 104,
+    "name": "お花の種",
+    "description": "植えるとキレイなお花が生えてくる。",
+    "itemType": "seed",
+    "price": 300,
+    "variant": "NORMAL",
+    "attribute": "bloom",
+    "imageRes": "assets/images/items/seed_b.webp"
+  },
+  {
+    "id": 105,
+    "name": "お花の種(金)",
+    "description": "植えると金色のキレイなお花が生えてくる。",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "bloom",
+    "imageRes": "assets/images/items/seed_b_g.webp"
+  },
+  {
+    "id": 106,
+    "name": "お花のたね(虹)",
+    "description": "植えると虹色のキレイなお花が生えてくる。",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "bloom",
+    "imageRes": "assets/images/items/seed_b_r.webp"
+  },
+  {
+    "id": 107,
+    "name": "木の種",
+    "description": "植えると樹木が生えてくる。",
+    "itemType": "seed",
+    "price": 500,
+    "variant": "NORMAL",
+    "attribute": "tree",
+    "imageRes": "assets/images/items/seed_c.webp"
+  },
+  {
+    "id": 108,
+    "name": "木の種(金)",
+    "description": "植えると金色の樹木が生えてくる。",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "tree",
+    "imageRes": "assets/images/items/seed_c_g.webp"
+  },
+  {
+    "id": 109,
+    "name": "木の種(虹)",
+    "description": "植えると虹色の樹木が生えてくる。",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "tree",
+    "imageRes": "assets/images/items/seed_c_r.webp"
+  },
+  {
+    "id": 110,
+    "name": "ファンシーな種",
+    "description": "謎の種。不思議な植物が生えそうだ。",
+    "itemType": "seed",
+    "price": 800,
+    "variant": "NORMAL",
+    "attribute": "fun",
+    "imageRes": "assets/images/items/seed_d.webp"
+  },
+  {
+    "id": 111,
+    "name": "ファンシーな種(金)",
+    "description": "謎の種。不思議な植物が生えそうだ。",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "fun",
+    "imageRes": "assets/images/items/seed_d_g.webp"
+  },
+  {
+    "id": 112,
+    "name": "ファンシーなたね(虹)",
+    "description": "謎の種。不思議な植物が生えそうだ。",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "fun",
+    "imageRes": "assets/images/items/seed_d_r.webp"
+  },
+  {
+    "id": 113,
+    "name": "奇妙なたね",
+    "description": "見た目が奇妙な種。植えると何が生えてくるだろうか？",
+    "itemType": "seed",
+    "price": 1000,
+    "variant": "NORMAL",
+    "attribute": "odd",
+    "imageRes": "assets/images/items/seed_e.webp"
+  },
+  {
+    "id": 114,
+    "name": "奇妙なたね(金)",
+    "description": "見た目が奇妙な種。植えると何が生えてくるだろうか？",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "odd",
+    "imageRes": "assets/images/items/seed_e_g.webp"
+  },
+  {
+    "id": 115,
+    "name": "奇妙なたね(虹)",
+    "description": "見た目が奇妙な種。植えると何が生えてくるだろうか？",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "odd",
+    "imageRes": "assets/images/items/seed_e_r.webp"
+  },
+  {
+    "id": 201,
+    "name": "成長促進の肥料",
+    "description": "植物の成長を早めるための肥料。",
+    "itemType": "growthBoost",
+    "price": 100,
+    "imageRes": "assets/images/items/fertilizer_growth.webp"
+  },
+  {
+    "id": 301,
+    "name": "固形肥料",
+    "description": "貴重な種類の植物たちが生えやすくなる。",
+    "itemType": "rarerateboostRow",
+    "price": 200,
+    "imageRes": "assets/images/items/fertilizer_solid.webp"
+  },
+  {
+    "id": 302,
+    "name": "固形肥料DX",
+    "description": "貴重な種類の植物たちがとても生えやすくなる。",
+    "itemType": "rarerateboostHigh",
+    "price": 500,
+    "imageRes": "assets/images/items/fertilizer_solid_g.webp"
+  },
+  {
+    "id": 401,
+    "name": "幸福の肥料",
+    "description": "珍しい色の植物たちが生えやすくなる。",
+    "itemType": "rarerateboostSuper",
+    "price": 1000,
+    "imageRes": "assets/images/items/fertilizer_luck.webp"
+  },
+  {
+    "id": 500,
+    "name": "鉢(ブラウン)",
+    "description": "茶色の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot.webp"
+  },
+  {
+    "id": 501,
+    "name": "鉢(ゴールド)",
+    "description": "金色の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_gold.webp"
+  },
+  {
+    "id": 502,
+    "name": "鉢(レインボー)",
+    "description": "虹色の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_rainbow.webp"
+  },
+  {
+    "id": 503,
+    "name": "鉢(イエロー)",
+    "description": "黄色の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_yellow.webp"
+  },
+  {
+    "id": 504,
+    "name": "鉢(レッド)",
+    "description": "赤の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_red.webp"
+  },
+  {
+    "id": 505,
+    "name": "鉢(ブルー)",
+    "description": "青の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_blue.webp"
+  },
+  {
+    "id": 506,
+    "name": "鉢(グリーン)",
+    "description": "緑の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_green.webp"
+  },
+  {
+    "id": 507,
+    "name": "鉢(ピンク)",
+    "description": "ピンクの鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_pink.webp"
+  },
+  {
+    "id": 508,
+    "name": "鉢(ホワイト)",
+    "description": "白の鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_white.webp"
+  },
+  {
+    "id": 509,
+    "name": "鉢(スタープラント)",
+    "description": "スタープラントの鉢",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_starplant.webp"
+  }
+]

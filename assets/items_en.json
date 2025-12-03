@@ -1,0 +1,264 @@
+[
+  {
+    "id": 101,
+    "name": "Leafy Seed",
+    "description": "Plant it to grow a leafy plant.",
+    "itemType": "seed",
+    "price": 100,
+    "variant": "NORMAL",
+    "attribute": "leafy",
+    "imageRes": "assets/images/items/seed_a.webp"
+  },
+  {
+    "id": 102,
+    "name": "Gold Leafy Seed",
+    "description": "Plant it to grow a golden leafy plant.",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "leafy",
+    "imageRes": "assets/images/items/seed_a_g.webp"
+  },
+  {
+    "id": 103,
+    "name": "Rainbow Leafy Seed",
+    "description": "Plant it to grow a rainbow-colored leafy plant.",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "leafy",
+    "imageRes": "assets/images/items/seed_a_r.webp"
+  },
+  {
+    "id": 104,
+    "name": "Bloom Seed",
+    "description": "Plant it to grow a beautiful flower.",
+    "itemType": "seed",
+    "price": 300,
+    "variant": "NORMAL",
+    "attribute": "bloom",
+    "imageRes": "assets/images/items/seed_b.webp"
+  },
+  {
+    "id": 105,
+    "name": "Gold Flower Seed",
+    "description": "Plant it to grow a beautiful golden flower.",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "bloom",
+    "imageRes": "assets/images/items/seed_b_g.webp"
+  },
+  {
+    "id": 106,
+    "name": "Rainbow Flower Seed",
+    "description": "Plant it to grow a beautiful rainbow flower.",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "bloom",
+    "imageRes": "assets/images/items/seed_b_r.webp"
+  },
+  {
+    "id": 107,
+    "name": "Tree Seed",
+    "description": "Plant it to grow a tree.",
+    "itemType": "seed",
+    "price": 500,
+    "variant": "NORMAL",
+    "attribute": "tree",
+    "imageRes": "assets/images/items/seed_c.webp"
+  },
+  {
+    "id": 108,
+    "name": "Gold Tree Seed",
+    "description": "Plant it to grow a golden tree.",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "tree",
+    "imageRes": "assets/images/items/seed_c_g.webp"
+  },
+  {
+    "id": 109,
+    "name": "Rainbow Tree Seed",
+    "description": "Plant it to grow a rainbow-colored tree.",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "tree",
+    "imageRes": "assets/images/items/seed_c_r.webp"
+  },
+  {
+    "id": 110,
+    "name": "Fun Seed",
+    "description": "A playful and exciting seed. Who knows what fun plant will grow?",
+    "itemType": "seed",
+    "price": 800,
+    "variant": "NORMAL",
+    "attribute": "fun",
+    "imageRes": "assets/images/items/seed_d.webp"
+  },
+  {
+    "id": 111,
+    "name": "Gold Fun Seed",
+    "description": "A playful and exciting seed. Who knows what fun plant will grow?",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "fun",
+    "imageRes": "assets/images/items/seed_d_g.webp"
+  },
+  {
+    "id": 112,
+    "name": "Rainbow Fun Seed",
+    "description": "A playful and exciting seed. Who knows what fun plant will grow?",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "fun",
+    "imageRes": "assets/images/items/seed_d_r.webp"
+  },
+  {
+    "id": 113,
+    "name": "Odd Seed",
+    "description": "A strange-looking seed. What will grow from it?",
+    "itemType": "seed",
+    "price": 1000,
+    "variant": "NORMAL",
+    "attribute": "odd",
+    "imageRes": "assets/images/items/seed_e.webp"
+  },
+  {
+    "id": 114,
+    "name": "Gold Odd Seed",
+    "description": "A strange-looking seed. What will grow from it?",
+    "itemType": "seed",
+    "price": 3000,
+    "variant": "GOLD",
+    "attribute": "odd",
+    "imageRes": "assets/images/items/seed_e_g.webp"
+  },
+  {
+    "id": 115,
+    "name": "Rainbow Odd Seed",
+    "description": "A strange-looking seed. What will grow from it?",
+    "itemType": "seed",
+    "price": 5000,
+    "variant": "RAINBOW",
+    "attribute": "odd",
+    "imageRes": "assets/images/items/seed_e_r.webp"
+  },
+  {
+    "id": 201,
+    "name": "Growth Booster Fertilizer",
+    "description": "Fertilizer that speeds up plant growth.",
+    "itemType": "growthBoost",
+    "price": 100,
+    "imageRes": "assets/images/items/fertilizer_growth.webp"
+  },
+  {
+    "id": 301,
+    "name": "Solid Fertilizer",
+    "description": "Helps rare types of plants grow more easily.",
+    "itemType": "rarerateboostRow",
+    "price": 200,
+    "imageRes": "assets/images/items/fertilizer_solid.webp"
+  },
+  {
+    "id": 302,
+    "name": "Solid Fertilizer DX",
+    "description": "Greatly helps rare types of plants grow more easily.",
+    "itemType": "rarerateboostHigh",
+    "price": 500,
+    "imageRes": "assets/images/items/fertilizer_solid_g.webp"
+  },
+  {
+    "id": 401,
+    "name": "Lucky Fertilizer",
+    "description": "Helps rare-colored plants grow more easily.",
+    "itemType": "rarerateboostSuper",
+    "price": 1000,
+    "imageRes": "assets/images/items/fertilizer_luck.webp"
+  },
+  {
+    "id": 500,
+    "name": "Brown Pot",
+    "description": "A brown pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot.webp"
+  },
+  {
+    "id": 501,
+    "name": "Gold Pot",
+    "description": "A gold pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_gold.webp"
+  },
+  {
+    "id": 502,
+    "name": "Rainbow Pot",
+    "description": "A rainbow pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_rainbow.webp"
+  },
+  {
+    "id": 503,
+    "name": "Yellow Pot",
+    "description": "A yellow pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_yellow.webp"
+  },
+  {
+    "id": 504,
+    "name": "Red Pot",
+    "description": "A red pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_red.webp"
+  },
+  {
+    "id": 505,
+    "name": "Blue Pot",
+    "description": "A blue pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_blue.webp"
+  },
+  {
+    "id": 506,
+    "name": "Green Pot",
+    "description": "A green pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_green.webp"
+  },
+  {
+    "id": 507,
+    "name": "Pink Pot",
+    "description": "A pink pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_pink.webp"
+  },
+  {
+    "id": 508,
+    "name": "White Pot",
+    "description": "A white pot.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_white.webp"
+  },
+  {
+    "id": 509,
+    "name": "Star Plant Pot",
+    "description": "A pot themed after a Star Plant.",
+    "itemType": "decoration",
+    "price": 3000,
+    "imageRes": "assets/images/items/pot_starplant.webp"
+  }
+]

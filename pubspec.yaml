@@ -1,0 +1,348 @@
+name: myplantapp_ver1
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ^3.9.2
+dependencies:
+  flutter:
+    sdk: flutter
+  hive:
+  hive_flutter:
+  uuid:
+  cupertino_icons: ^1.0.8
+  json_annotation: ^4.9.0
+  freezed_annotation:
+  provider:
+  collection:
+  logger:
+  flutter_riverpod:
+  riverpod_annotation: ^2.3.4
+  audioplayers:
+  flutter_localization:
+  flutter_svg: ^2.0.9
+  introduction_screen: ^3.1.10
+  google_mobile_ads:
+  auto_size_text: ^3.0.0
+  google_fonts: ^6.2.1
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.2
+  android_intent_plus: ^6.0.0
+  device_info_plus:
+  change_app_package_name: ^1.1.0
+  url_launcher:
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  mockito:
+  build_runner:
+  json_serializable: ^6.8.0
+  hive_generator:
+  hive_test:
+  mocktail:
+  path_provider_platform_interface:
+  freezed:
+  riverpod_generator:
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash:
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#FFFDD0"          # 背景色（クリーム色など）
+  image: assets/icons/app_splash.png
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/plants_ja.json
+    - assets/plants_en.json
+    - assets/items_ja.json
+    - assets/items_en.json
+    - assets/icons/coin.webp
+    - assets/icons/item.webp
+    - assets/icons/coin.png
+    - assets/icons/seed.png
+    - assets/icons/crown.png
+    - assets/icons/drop.webp
+    - assets/icons/drop_grey.webp
+    - assets/icons/locked_silver.webp
+    - assets/icons/locked_gold.webp
+    - assets/icons/petal.webp
+    - assets/icons/bee.webp
+    - assets/icons/butterfly_1.webp
+    - assets/icons/butterfly_2.webp
+    - assets/icons/butterfly_3.webp
+    - assets/icons/app_splash.webp
+    - assets/images/pot/pot.webp
+    - assets/images/pot/pot_grey.webp
+    - assets/images/pot/pot_lemon.webp
+    - assets/images/pot/pot_gold.webp
+    - assets/images/plants/st0.webp
+    - assets/images/plants/seed_a_st1.webp
+    - assets/images/plants/seed_b_st1.webp
+    - assets/images/plants/seed_c_st1.webp
+    - assets/images/plants/seed_d_st1.webp
+    - assets/images/plants/seed_e_st1.webp
+    - assets/images/plants/agave_st2.webp
+    - assets/images/plants/agave_st2_g.webp
+    - assets/images/plants/agave_st2_r.webp
+    - assets/images/plants/agave.webp
+    - assets/images/plants/agave_g.webp
+    - assets/images/plants/agave_r.webp
+    - assets/images/plants/aloe_st2.webp
+    - assets/images/plants/aloe_st2_g.webp
+    - assets/images/plants/aloe_st2_r.webp
+    - assets/images/plants/aloe.webp
+    - assets/images/plants/aloe_g.webp
+    - assets/images/plants/aloe_r.webp
+    - assets/images/plants/sansevieria_st2.webp
+    - assets/images/plants/sansevieria_st2_g.webp
+    - assets/images/plants/sansevieria_st2_r.webp
+    - assets/images/plants/sansevieria.webp
+    - assets/images/plants/sansevieria_g.webp
+    - assets/images/plants/sansevieria_r.webp
+    - assets/images/plants/alocasia_st2.webp
+    - assets/images/plants/alocasia_st2_g.webp
+    - assets/images/plants/alocasia_st2_r.webp
+    - assets/images/plants/alocasia.webp
+    - assets/images/plants/alocasia_g.webp
+    - assets/images/plants/alocasia_r.webp
+    - assets/images/plants/monstera_st2.webp
+    - assets/images/plants/monstera_st2_g.webp
+    - assets/images/plants/monstera_st2_r.webp
+    - assets/images/plants/monstera.webp
+    - assets/images/plants/monstera_g.webp
+    - assets/images/plants/monstera_r.webp
+    - assets/images/plants/cactus_st2.webp
+    - assets/images/plants/cactus_st2_g.webp
+    - assets/images/plants/cactus_st2_r.webp
+    - assets/images/plants/cactus.webp
+    - assets/images/plants/cactus_g.webp
+    - assets/images/plants/cactus_r.webp
+    - assets/images/plants/gerbera_st2.webp
+    - assets/images/plants/gerbera.webp
+    - assets/images/plants/gerbera_g.webp
+    - assets/images/plants/gerbera_r.webp
+    - assets/images/plants/lily_st2.webp
+    - assets/images/plants/lily.webp
+    - assets/images/plants/lily_g.webp
+    - assets/images/plants/lily_r.webp
+    - assets/images/plants/sunflower.webp
+    - assets/images/plants/sunflower_g.webp
+    - assets/images/plants/sunflower_r.webp
+    - assets/images/plants/tulip_st2.webp
+    - assets/images/plants/tulip.webp
+    - assets/images/plants/tulip_g.webp
+    - assets/images/plants/tulip_r.webp
+    - assets/images/plants/starplant_st2.webp
+    - assets/images/plants/starplant.webp
+    - assets/images/plants/starplant_g.webp
+    - assets/images/plants/starplant_r.webp
+    - assets/images/plants/rose_st2.webp
+    - assets/images/plants/rose.webp
+    - assets/images/plants/rose_g.webp
+    - assets/images/plants/rose_r.webp
+    - assets/images/plants/orange_st2.webp
+    - assets/images/plants/orange.webp
+    - assets/images/plants/orange_g.webp
+    - assets/images/plants/orange_r.webp
+    - assets/images/plants/lemon.webp
+    - assets/images/plants/lemon_g.webp
+    - assets/images/plants/lemon_r.webp
+    - assets/images/plants/olive_st2.webp
+    - assets/images/plants/olive.webp
+    - assets/images/plants/olive_g.webp
+    - assets/images/plants/olive_r.webp
+    - assets/images/plants/coco_st2.webp
+    - assets/images/plants/coco.webp
+    - assets/images/plants/coco_g.webp
+    - assets/images/plants/coco_r.webp
+    - assets/images/plants/pine_st2.webp
+    - assets/images/plants/pine_st2_g.webp
+    - assets/images/plants/pine_st2_r.webp
+    - assets/images/plants/pine.webp
+    - assets/images/plants/pine_g.webp
+    - assets/images/plants/pine_r.webp
+    - assets/images/plants/baobab_st2.webp
+    - assets/images/plants/baobab_st2_g.webp
+    - assets/images/plants/baobab_st2_r.webp
+    - assets/images/plants/baobab.webp
+    - assets/images/plants/baobab_g.webp
+    - assets/images/plants/baobab_r.webp
+    - assets/images/plants/shiitake_st2.webp
+    - assets/images/plants/shiitake_st2_g.webp
+    - assets/images/plants/shiitake_st2_r.webp
+    - assets/images/plants/shiitake.webp
+    - assets/images/plants/shiitake_g.webp
+    - assets/images/plants/shiitake_r.webp
+    - assets/images/plants/asparagus_st2.webp
+    - assets/images/plants/asparagus_st2_g.webp
+    - assets/images/plants/asparagus_st2_r.webp
+    - assets/images/plants/asparagus.webp
+    - assets/images/plants/asparagus_g.webp
+    - assets/images/plants/asparagus_r.webp
+    - assets/images/plants/mushroom_st2.webp
+    - assets/images/plants/mushroom_st2_g.webp
+    - assets/images/plants/mushroom_st2_r.webp
+    - assets/images/plants/mushroom.webp
+    - assets/images/plants/mushroom_g.webp
+    - assets/images/plants/mushroom_r.webp
+    - assets/images/plants/bambooshoot_st2.webp
+    - assets/images/plants/bambooshoot_st2_g.webp
+    - assets/images/plants/bambooshoot_st2_r.webp
+    - assets/images/plants/bambooshoot.webp
+    - assets/images/plants/bambooshoot_g.webp
+    - assets/images/plants/bambooshoot_r.webp
+    - assets/images/plants/porcini_st2.webp
+    - assets/images/plants/porcini_st2_g.webp
+    - assets/images/plants/porcini_st2_r.webp
+    - assets/images/plants/porcini.webp
+    - assets/images/plants/porcini_g.webp
+    - assets/images/plants/porcini_r.webp
+    - assets/images/plants/destroyingangel_st2.webp
+    - assets/images/plants/destroyingangel_st2_g.webp
+    - assets/images/plants/destroyingangel_st2_r.webp
+    - assets/images/plants/destroyingangel.webp
+    - assets/images/plants/destroyingangel_g.webp
+    - assets/images/plants/destroyingangel_r.webp
+    - assets/images/plants/seaweed_st2.webp
+    - assets/images/plants/seaweed_st2_g.webp
+    - assets/images/plants/seaweed_st2_r.webp
+    - assets/images/plants/seaweed.webp
+    - assets/images/plants/seaweed_g.webp
+    - assets/images/plants/seaweed_r.webp
+    - assets/images/plants/nepenthes_st2.webp
+    - assets/images/plants/nepenthes_st2_g.webp
+    - assets/images/plants/nepenthes_st2_r.webp
+    - assets/images/plants/nepenthes.webp
+    - assets/images/plants/nepenthes_g.webp
+    - assets/images/plants/nepenthes_r.webp
+    - assets/images/plants/seaanemone_st2.webp
+    - assets/images/plants/seaanemone_st2_g.webp
+    - assets/images/plants/seaanemone_st2_r.webp
+    - assets/images/plants/seaanemone.webp
+    - assets/images/plants/seaanemone_g.webp
+    - assets/images/plants/seaanemone_r.webp
+    - assets/images/plants/eel_st2.webp
+    - assets/images/plants/eel_st2_g.webp
+    - assets/images/plants/eel_st2_r.webp
+    - assets/images/plants/eel.webp
+    - assets/images/plants/eel_g.webp
+    - assets/images/plants/eel_r.webp
+    - assets/images/plants/moray_eel.webp
+    - assets/images/plants/moray_eel_g.webp
+    - assets/images/plants/moray_eel_r.webp
+    - assets/images/plants/rafflesia_st2.webp
+    - assets/images/plants/rafflesia_st2_g.webp
+    - assets/images/plants/rafflesia_st2_r.webp
+    - assets/images/plants/rafflesia.webp
+    - assets/images/plants/rafflesia_g.webp
+    - assets/images/plants/rafflesia_r.webp
+    - assets/images/items/seed_a.webp
+    - assets/images/items/seed_a_g.webp
+    - assets/images/items/seed_a_r.webp
+    - assets/images/items/seed_b.webp
+    - assets/images/items/seed_b_g.webp
+    - assets/images/items/seed_b_r.webp
+    - assets/images/items/seed_c.webp
+    - assets/images/items/seed_c_g.webp
+    - assets/images/items/seed_c_r.webp
+    - assets/images/items/seed_d.webp
+    - assets/images/items/seed_d_g.webp
+    - assets/images/items/seed_d_r.webp
+    - assets/images/items/seed_e.webp
+    - assets/images/items/seed_e_g.webp
+    - assets/images/items/seed_e_r.webp
+    - assets/images/items/fertilizer_growth.webp
+    - assets/images/items/fertilizer_luck.webp
+    - assets/images/items/fertilizer_solid.webp
+    - assets/images/items/fertilizer_solid_g.webp
+    - assets/images/items/pot.webp
+    - assets/images/items/pot_gold.webp
+    - assets/images/items/pot_rainbow.webp
+    - assets/images/items/pot_yellow.webp
+    - assets/images/items/pot_red.webp
+    - assets/images/items/pot_blue.webp
+    - assets/images/items/pot_green.webp
+    - assets/images/items/pot_pink.webp
+    - assets/images/items/pot_white.webp
+    - assets/images/items/pot_starplant.webp
+    - assets/images/pot/pot.png
+    - assets/images/pot/pot_grey.png
+    - assets/images/ui/appbar/appbar_vine.png
+    - assets/images/ui/appbar/appbar_vine_v1.png
+    - assets/images/ui/bg/home_bg.png
+    - assets/images/ui/bg/home.png
+    - assets/images/ui/bg/bg_store.png
+    - assets/images/ui/bg/collect_bg.png
+    - assets/images/ui/bg/sunburst.jpg
+    - assets/images/ui/bg/tutorial1_ja.png
+    - assets/images/ui/bg/tutorial2_ja.png
+    - assets/images/ui/bg/tutorial3_ja.png
+    - assets/images/ui/bg/tutorial1_en.png
+    - assets/images/ui/bg/tutorial2_en.png
+    - assets/images/ui/bg/tutorial3_en.png
+    - assets/images/ui/button/blue.png
+    - assets/images/ui/button/button_bg.png
+    - assets/images/ui/button/button_red.png
+    - assets/images/ui/button/button_bg_red.png
+    - assets/images/ui/button/grey.png
+    - assets/images/ui/button/brown.png
+    - assets/images/ui/button/green.png
+    - assets/images/ui/button/red.png
+    - assets/images/ui/button/skyblue.png
+    - assets/images/ui/button/red_v1.svg
+    - assets/images/ui/button/red_v2.png
+    - assets/images/ui/button/red_v1.png
+    - assets/images/ui/button/grey_v1.svg
+    - assets/images/ui/button/grey_v1.png
+    - assets/images/ui/button/ad.png
+    - assets/images/ui/card/card_bg1.png
+    - assets/images/ui/card/card_bg.png
+    - assets/images/ui/dialog/dialog_bg_confirm.png
+    - assets/images/ui/dialog/dialog_body.png
+    - assets/images/ui/dialog/dialog_header.png
+    - assets/images/ui/gauge/body_green.png
+    - assets/images/ui/gauge/body_yellow.png
+    - assets/images/ui/gauge/frame_green.png
+    - assets/images/collected/bg_sunlawn.png
+    - assets/images/collected/icons/ex_normal.png
+    - assets/images/collected/icons/ex_gold.png
+    - assets/images/collected/icons/ex_rainbow.png
+    - assets/images/collected/icons/gold_crown.png
+    - assets/images/collected/icons/rainbow_crown.png
+    - assets/images/collected/icons/goldrainbow_crown.png
+    - assets/images/collected/card/card_grey.png
+    - assets/images/collected/dialog/body_normal.png
+    - assets/images/collected/dialog/body_gold.png
+    - assets/images/collected/dialog/body_rainbow.png
+    - assets/images/collected/dialog/header_normal.png
+    - assets/images/collected/dialog/header_gold.png
+    - assets/images/collected/dialog/header_rainbow.png
+    - assets/images/ui/dialog/item_dialog.png
+    - assets/images/ui/dialog/item_dialog_v1.png
+    - assets/images/ui/dialog/item_dialog_v2.png
+    - assets/images/ui/dialog/item_dialog.svg
+    - assets/images/collected/frame/collect_frame.png
+    - assets/images/achievement/icons/box_close.png
+    - assets/images/achievement/icons/box_grey.png
+    - assets/images/achievement/icons/box_open.png
+    - assets/images/achievement/frame/frame_black.png
+    - assets/images/achievement/frame/frame_gold.png
+    - assets/images/achievement/frame/frame_rainbow.png
+    - assets/images/achievement/bg_achievement.png
+    - assets/images/achievement/treasure.webp
+    - assets/sounds/sample_1.mp3
+    - assets/sounds/success.mp3
+    - assets/sounds/farm_bg.mp3
+    - assets/sounds/water.mp3
+
