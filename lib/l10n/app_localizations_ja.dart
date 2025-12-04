@@ -240,13 +240,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get collected_harvestCount => '収穫回数';
 
   @override
-  String get ach_unlocked => '達成済み';
+  String get ach_unlocked => '達成';
 
   @override
   String get ach_locked => '未達成';
 
   @override
-  String get ach_received => '報酬未受取';
+  String get ach_received => '報酬受取済';
 
   @override
   String get ach_achievementReward => '達成報酬';
@@ -267,13 +267,13 @@ class AppLocalizationsJa extends AppLocalizations {
   String get store_text2 => 'この内容で購入しますか？';
 
   @override
-  String get store_text3 => '購入が完了しました';
+  String get store_text3 => '購入が完了しました！';
 
   @override
   String get store_text4 => 'この内容で売却しますか？';
 
   @override
-  String get store_text5 => '売却が完了しました';
+  String get store_text5 => '売却が完了しました！';
 
   @override
   String get store_text6 => '売却するアイテムがありません';

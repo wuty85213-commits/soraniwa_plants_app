@@ -24,7 +24,7 @@ class AchievementDialog extends ConsumerWidget {
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-            image: AssetImage('assets/images/ui/card/card_bg1.png'),
+            image: AssetImage('assets/images/common/dialog_cream2.png'),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.circular(20),
@@ -56,11 +56,11 @@ class AchievementDialog extends ConsumerWidget {
                   children: [
                     const Positioned.fill(child: SparkleField()) ,
                     RotatingClippedBackground(
-                      imagePath: 'assets/images/ui/bg/sunburst.jpg', // ← あなたの画像
+                      imagePath: 'assets/images/common/sunburst.jpg', // ← あなたの画像
                       scale: 2.5,
                       size: 200,
                       child: Image.asset(
-                        'assets/images/achievement/treasure.webp', //todo 画像差し替える
+                        'assets/images/achievement/treasure.webp',
                         height: 120,
                       ),
                     ),
@@ -81,8 +81,8 @@ class AchievementDialog extends ConsumerWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      const SizedBox(width: 30),
-                      Image.asset('assets/icons/coin.png', height: 24),
+                      const SizedBox(width: 40),
+                      Image.asset('assets/icons/coin.webp', height: 24),
                       const SizedBox(width: 8),
                       Text("+${ach.reward.coins} ${l.coins}"),
                     ],
@@ -98,11 +98,11 @@ class AchievementDialog extends ConsumerWidget {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Row(
                     children: [
-                      const SizedBox(width: 30),
+                      const SizedBox(width: 40),
 
                       // アイテム画像（itemId からマスター検索することが多い）
                       Image.asset(
-                        itemMs?.imageRes ?? "assets/icons/coin.png",   //todo デフォルトitemアイコンを追加する
+                        itemMs?.imageRes ?? "assets/icons/item.webp",
                         height: 24,
                       ),
 

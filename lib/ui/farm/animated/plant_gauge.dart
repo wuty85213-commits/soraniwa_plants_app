@@ -19,9 +19,9 @@ class PlantGauge extends StatelessWidget {
 
     // ゲージ画像を切り替え（緑と黄色）
     final gaugeImage = isFull
-        ? 'assets/images/ui/gauge/body_yellow.png'   // ← 黄色ゲージ
-        : 'assets/images/ui/gauge/body_green.png'; // ← 緑ゲージ
-    final frameImage = 'assets/images/ui/gauge/frame_green.png'; // ← 枠（下敷き）
+        ? 'assets/images/common/gauge_yellow.png'   // ← 黄色ゲージ
+        : 'assets/images/common/gauge_green.png'; // ← 緑ゲージ
+    final frameImage = 'assets/images/common/gauge_frame.png'; // ← 枠（下敷き）
 
     return SizedBox(
       width: width,

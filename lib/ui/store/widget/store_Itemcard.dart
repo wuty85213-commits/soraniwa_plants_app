@@ -48,7 +48,7 @@ class StoreItemCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(16),
             child: Image.asset(
-              'assets/images/ui/card/card_bg.png',
+              'assets/images/common/card_paper.png',
               fit: BoxFit.cover,
               width: double.infinity,
               height: double.infinity,

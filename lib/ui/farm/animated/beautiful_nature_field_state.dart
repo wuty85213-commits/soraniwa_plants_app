@@ -40,23 +40,29 @@ class _BeautifulNatureFieldState extends State<BeautifulNatureField>
   // 🦋 画像を読み込み
   Future<void> _loadImages() async {
     Future<ui.Image> load(String path) async {
-      final data = await DefaultAssetBundle.of(context).load(path);
-      final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
-      final frame = await codec.getNextFrame();
-      return frame.image;
+      try {
+        final data = await DefaultAssetBundle.of(context).load(path);
+        final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
+        final frame = await codec.getNextFrame();
+        return frame.image;
+      } catch (e, st) {
+        debugPrint("❌ Image load failed: $path");
+        debugPrint("原因: $e");
+        return Future.error(e);
+      }
     }
 
     // 羽ばたきフレーム
     for (final path in [
-      'assets/icons/butterfly_1.webp',
-      'assets/icons/butterfly_2.webp',
-      'assets/icons/butterfly_3.webp',
+      'assets/icons/3.0x/butterfly_1.webp',
+      'assets/icons/3.0x/butterfly_2.webp',
+      'assets/icons/3.0x/butterfly_3.webp',
     ]) {
       _butterflyFrames.add(await load(path));
     }
 
-    _beeImg = await load('assets/icons/bee.webp');
-    _petalImg = await load('assets/icons/petal.webp');
+    _beeImg = await load('assets/icons/3.0x/bee.webp');
+    _petalImg = await load('assets/icons/3.0x/petal.webp');
 
     setState(() {});
   }
@@ -295,217 +301,4 @@ class _NaturePainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) => true;
 }
-
-
-
-/*
-
-/// 🦋🐝🌸 背景で自然が舞うアニメーション
-class BeautifulNatureField extends StatefulWidget {
-  const BeautifulNatureField({super.key});
-
-  @override
-  State<BeautifulNatureField> createState() => _BeautifulNatureFieldState();
-}
-
-class _BeautifulNatureFieldState extends State<BeautifulNatureField>
-    with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  final Random _rand = Random();
-
-  final List<_Particle> _butterflies = [];
-  final List<_Particle> _bees = [];
-  final List<_Particle> _petals = [];
-
-  ui.Image? _butterflyImg;
-  ui.Image? _beeImg;
-  ui.Image? _petalImg;
-
-  @override
-  void initState() {
-    super.initState();
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 120),
-    )..addListener(_updateParticles);
-
-    _loadImages();
-    _spawnInitialParticles();
-    _controller.repeat();
-  }
-
-  Future<void> _loadImages() async {
-    Future<ui.Image> load(String path) async {
-      final data = await DefaultAssetBundle.of(context).load(path);
-      final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
-      final frame = await codec.getNextFrame();
-      return frame.image;
-    }
-
-    _butterflyImg = await load('assets/icons/coin.png');
-    _beeImg = await load('assets/icons/seed.png');
-    _petalImg = await load('assets/icons/crown.png');
-    setState(() {});
-  }
-
-  void _spawnInitialParticles() {
-    for (int i = 0; i < 6; i++) {
-      _butterflies.add(_randomParticle(0, 1.2));
-    }
-    for (int i = 0; i < 4; i++) {
-      _bees.add(_randomParticle(0, 2.0));
-    }
-    for (int i = 0; i < 14; i++) {
-      _petals.add(_randomParticle(pi / 2, 0.5));
-    }
-  }
-
-  _Particle _randomParticle(double baseAngle, double speed) {
-    return _Particle(
-      x: _rand.nextDouble() * 400,
-      y: _rand.nextDouble() * 700,
-      vx: cos(baseAngle + _rand.nextDouble()) * speed,
-      vy: sin(baseAngle + _rand.nextDouble()) * speed,
-      size: 20 + _rand.nextDouble() * 40,
-      type: _ParticleType.values[_rand.nextInt(3)],
-    );
-  }
-
-  void _updateParticles() {
-    for (final p in [..._butterflies, ..._bees, ..._petals]) {
-      p.time += 0.016;
-      p.x += p.vx;
-      p.y += p.vy + sin(p.time * 1.2) * 0.5;
-
-      if (p.y > 820) p.y = -20;
-      if (p.x > 420) p.x = -20;
-      if (p.x < -20) p.x = 420;
-    }
-    setState(() {});
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return IgnorePointer(
-      child: CustomPaint(
-        painter: _NaturePainter(
-          butterflies: _butterflies,
-          bees: _bees,
-          petals: _petals,
-          butterflyImg: _butterflyImg,
-          beeImg: _beeImg,
-          petalImg: _petalImg,
-        ),
-      ),
-    );
-  }
-}
-
-enum _ParticleType { butterfly, bee, petal }
-
-class _Particle {
-  double x, y, vx, vy, size, time = 0;
-  _ParticleType type;
-  _Particle({
-    required this.x,
-    required this.y,
-    required this.vx,
-    required this.vy,
-    required this.size,
-    required this.type,
-  });
-}
-
-class _NaturePainter extends CustomPainter {
-  final List<_Particle> butterflies;
-  final List<_Particle> bees;
-  final List<_Particle> petals;
-  final ui.Image? butterflyImg, beeImg, petalImg;
-
-  _NaturePainter({
-    required this.butterflies,
-    required this.bees,
-    required this.petals,
-    required this.butterflyImg,
-    required this.beeImg,
-    required this.petalImg,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final paint = Paint()..isAntiAlias = true;
-
-    // 花びらは奥に（柔らかく透明に）
-    for (final p in petals) {
-      if (petalImg != null) {
-        final opacity = 0.4 + 0.3 * sin(p.time);
-        paint.color = Colors.white.withValues(alpha: opacity);
-        final rect = Rect.fromCenter(
-          center: Offset(p.x, p.y),
-          width: p.size,
-          height: p.size,
-        );
-        canvas.drawImageRect(
-          petalImg!,
-          Rect.fromLTWH(0, 0, petalImg!.width.toDouble(), petalImg!.height.toDouble()),
-          rect,
-          paint,
-        );
-      }
-    }
-
-    // 🦋 ちょうちょ
-    for (final p in butterflies) {
-      if (butterflyImg != null) {
-        final scale = 1 + 0.1 * sin(p.time * 8);
-        final rect = Rect.fromCenter(
-          center: Offset(p.x, p.y),
-          width: p.size * scale,
-          height: p.size * scale,
-        );
-        canvas.save();
-        canvas.translate(p.x, p.y);
-        canvas.rotate(sin(p.time) * 0.3);
-        canvas.translate(-p.x, -p.y);
-        canvas.drawImageRect(
-          butterflyImg!,
-          Rect.fromLTWH(0, 0, butterflyImg!.width.toDouble(), butterflyImg!.height.toDouble()),
-          rect,
-          paint,
-        );
-        canvas.restore();
-      }
-    }
-
-    // 🐝 蜂（速く小刻みに）
-    for (final p in bees) {
-      if (beeImg != null) {
-        final scale = 1 + 0.2 * sin(p.time * 20);
-        final rect = Rect.fromCenter(
-          center: Offset(p.x, p.y),
-          width: p.size * scale,
-          height: p.size * scale,
-        );
-        canvas.drawImageRect(
-          beeImg!,
-          Rect.fromLTWH(0, 0, beeImg!.width.toDouble(), beeImg!.height.toDouble()),
-          rect,
-          paint,
-        );
-      }
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
-}
-
-
- */
 

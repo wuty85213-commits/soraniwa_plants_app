@@ -29,7 +29,7 @@ class PlantMasterRepositoryHive implements IPlantMasterRepository {
       return;
     }
     // ✅ Hiveが空なら assets JSON からロード
-    debugPrint('🌱 Loading Plant Master from JSON (locale: $localeCode)...');
+    log.d('🌱 Loading Plant Master from JSON (locale: $localeCode)...');
 
     try{
       final path = 'assets/plants_$localeCode.json';

@@ -26,7 +26,7 @@ class ItemGridDialogFullScreen extends ConsumerWidget {
               padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
               decoration: BoxDecoration(
                 image: const DecorationImage(
-                  image: AssetImage("assets/images/ui/dialog/item_dialog_v1.png"),
+                  image: AssetImage("assets/images/common/dialog_cream1.png"),
                   fit: BoxFit.fill,
                 ),
                 borderRadius: BorderRadius.circular(20),
@@ -73,7 +73,7 @@ class ItemGridDialogFullScreen extends ConsumerWidget {
                               children: [
                                 Center(
                                   child: Image.asset(
-                                    master?.imageRes ?? "assets/images/pot/pot.png",
+                                    master?.imageRes ?? "assets/icons/item.webp",
                                     width: 40,
                                     height: 40,
                                   ),

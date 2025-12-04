@@ -35,7 +35,7 @@ class CollectedScreen extends ConsumerWidget {
                   children: [
                     Positioned.fill(
                         child: Image.asset(
-                          'assets/images/collected/bg_sunlawn.png',
+                          'assets/bg/bg_sunlawn.png',
                           fit: BoxFit.cover,
                         )
                     ),
@@ -46,7 +46,7 @@ class CollectedScreen extends ConsumerWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                           decoration: const BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/ui/appbar/appbar_vine_v1.png'),
+                              image: AssetImage('assets/images/common/appbar_vine.png'),
                               fit: BoxFit.cover,
                             ),
                             boxShadow: [
@@ -88,7 +88,7 @@ class CollectedScreen extends ConsumerWidget {
                               padding: const EdgeInsets.all(16),
                               decoration: const BoxDecoration(
                                 image: DecorationImage(
-                                  image: AssetImage('assets/images/collected/frame/collect_frame.png'),
+                                  image: AssetImage('assets/images/collected/frame_rich.png'),
                                   fit: BoxFit.fill,
                                 ),
                                 boxShadow: [
@@ -118,7 +118,7 @@ class CollectedScreen extends ConsumerWidget {
                                             SizedBox(
                                               height: 60,
                                               child: Image.asset(
-                                                "assets/images/collected/icons/ex_normal.png",
+                                                "assets/images/collected/ex_normal.webp",
                                               ),
                                             ),
                                             Text(
@@ -140,7 +140,7 @@ class CollectedScreen extends ConsumerWidget {
                                             SizedBox(
                                               height: 60,
                                               child: Image.asset(
-                                                "assets/images/collected/icons/ex_gold.png",
+                                                "assets/images/collected/ex_gold.webp",
                                               ),
                                             ),
                                             Text(
@@ -162,7 +162,7 @@ class CollectedScreen extends ConsumerWidget {
                                             SizedBox(
                                               height: 60,
                                               child: Image.asset(
-                                                "assets/images/collected/icons/ex_rainbow.png",
+                                                "assets/images/collected/ex_rainbow.webp",
                                               ),
                                             ),
                                             Text(
@@ -226,7 +226,7 @@ class CollectedScreen extends ConsumerWidget {
                                           decoration: BoxDecoration(
                                             borderRadius: BorderRadius.circular(10),
                                             image: DecorationImage(
-                                              image: AssetImage(isCollectedFlag ?'assets/images/ui/card/card_bg1.png' :'assets/images/collected/card/card_grey.png'), // ← あなたの背景画像
+                                              image: AssetImage(isCollectedFlag ?'assets/images/collected/card_cream.png' :'assets/images/collected/card_grey.png'), // ← あなたの背景画像
                                               fit: BoxFit.cover, // カード全体に広げる
                                             ),
                                             boxShadow: [

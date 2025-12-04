@@ -25,7 +25,7 @@ class ItemGridDialog extends ConsumerWidget {
             decoration: BoxDecoration(
               image: const DecorationImage(
                 image:
-                AssetImage("assets/images/ui/card/card_bg1.png"),
+                AssetImage("assets/images/collected/card_cream.png"),
                 fit: BoxFit.fill,
               ),
               borderRadius: BorderRadius.circular(20),
@@ -76,7 +76,7 @@ class ItemGridDialog extends ConsumerWidget {
                               // アイテム画像
                               Center(
                                 child: Image.asset(
-                                  master?.imageRes ?? "assets/images/pot/pot.png",
+                                  master?.imageRes ?? "assets/icons/item.webp",
                                   width: 40,
                                   height: 40,
                                   fit: BoxFit.contain,

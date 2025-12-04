@@ -44,7 +44,7 @@ class _HarvestResultDialogState extends State<HarvestResultDialog>
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-            image: AssetImage('assets/images/ui/dialog/item_dialog_v2.png'),
+            image: AssetImage('assets/images/common/dialog_cream2.png'),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.circular(20),
@@ -75,11 +75,11 @@ class _HarvestResultDialogState extends State<HarvestResultDialog>
                   children: [
                     const Positioned.fill(child: SparkleField()) ,
                     RotatingClippedBackground(
-                      imagePath: 'assets/images/ui/bg/sunburst.jpg', // ← あなたの画像
+                      imagePath: 'assets/images/common/sunburst.jpg', // ← あなたの画像
                       scale: 2.5,
                       size: 200,
                       child: Image.asset(
-                        widget.result.plant.imageRes[3] ?? 'assets/images/bamboo_1.png',
+                        widget.result.plant.imageRes[3],
                         height: 120,
                       ),
                     ),
@@ -136,7 +136,7 @@ class _HarvestResultDialogState extends State<HarvestResultDialog>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   //const SizedBox(width: 30),
-                  Image.asset('assets/icons/coin.png', height: 24),
+                  Image.asset('assets/icons/coin.webp', height: 24),
                   const SizedBox(width: 8),
                   Text("+${widget.result.coins}"),
                 ],

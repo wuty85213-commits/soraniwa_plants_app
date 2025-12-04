@@ -23,7 +23,6 @@ class SellDialog extends StatelessWidget {
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      debugPrint("🌿 SellDialog built. ownedItems = ${ownedItems?.length ?? 'null'}");
     });
 
     return Dialog(
@@ -32,7 +31,7 @@ class SellDialog extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-            image: AssetImage("assets/images/ui/dialog/item_dialog_v2.png"),
+            image: AssetImage("assets/images/common/dialog_cream2.png"),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.circular(20),
@@ -77,7 +76,7 @@ class SellDialog extends StatelessWidget {
                         margin: const EdgeInsets.symmetric(vertical: 6),
                         decoration: BoxDecoration(
                           image: const DecorationImage(
-                            image: AssetImage("assets/images/ui/card/card_bg.png"),
+                            image: AssetImage("assets/images/common/card_paper.png"),
                             fit: BoxFit.fill,
                           ),
                           borderRadius: BorderRadius.circular(16),
@@ -143,22 +142,25 @@ class SellDialog extends StatelessWidget {
                                       alignment: Alignment.center,
                                       children: [
                                         Image.asset(
-                                          'assets/images/ui/button/red.png',
-                                          width: 120,
-                                          height: 40,
+                                          'assets/images/common/bt_red.png',
+                                          width: 100,
                                           fit: BoxFit.fill,
                                         ),
-                                        Transform.translate(
-                                          offset: const Offset(0, -4),
+                                        // 🔥 Textの幅をボタン幅に合わせる
+                                        SizedBox(
+                                          width: 80,
                                           child: Text(
                                             '${item.sellPrice * quantity} ${l.coins}',
+                                            maxLines: 1,
+                                            overflow: TextOverflow.ellipsis,
+                                            textAlign: TextAlign.center,
                                             style: const TextStyle(
                                               color: Colors.white,
                                               fontWeight: FontWeight.w600,
                                               fontSize: 14,
                                             ),
                                           ),
-                                        )
+                                        ),
                                       ],
                                     ),
                                   )

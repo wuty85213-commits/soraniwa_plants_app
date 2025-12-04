@@ -43,7 +43,7 @@ class PotItemGridDialog extends ConsumerWidget {
             padding: const EdgeInsets.symmetric(vertical: 32,horizontal: 16),
             decoration: BoxDecoration(
               image: const DecorationImage(
-                image: AssetImage("assets/images/ui/dialog/item_dialog_v2.png"),
+                image: AssetImage("assets/images/common/dialog_cream2.png"),
                 fit: BoxFit.fill,
               ),
               borderRadius: BorderRadius.circular(20),

@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
+import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/env.dart';
 
 RewardedAd? _rewardedAd;
 
 void loadRewardedAd() {
+  final log = AppLogger.tag("ad📺");
   RewardedAd.load(
     adUnitId: Platform.isAndroid
         ? "ca-app-pub-3940256099942544/5224354917"
@@ -16,10 +18,10 @@ void loadRewardedAd() {
     rewardedAdLoadCallback: RewardedAdLoadCallback(
       onAdLoaded: (ad) {
         _rewardedAd = ad;
-        debugPrint('RewardedAd loaded');
+        log.d('RewardedAd loaded');
       },
       onAdFailedToLoad: (error) {
-        debugPrint('Failed to load RewardedAd: $error');
+        log.e('Failed to load RewardedAd: $error');
         _rewardedAd = null;
       },
     ),
@@ -27,8 +29,9 @@ void loadRewardedAd() {
 }
 
 Future<void> showRewardAd(Future<void> Function() rewardCallback) async{
+  final log = AppLogger.tag("ad📺");
   if (_rewardedAd == null) {
-    debugPrint("RewardAd is not ready");
+    log.d("RewardAd is not ready");
     return;
   }
 

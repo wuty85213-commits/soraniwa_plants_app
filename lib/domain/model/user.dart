@@ -16,3 +16,16 @@ class User with _$User {
     String? languageCade,
   }) = _User;
 }
+extension UserExtensions on User {
+  /// コイン数を省略表記（K / M）で返す
+  String get coinsFormatted {
+    final value = coins;
+
+    if (value >= 1000000) {
+      double m = value / 1000000;
+      return "${m.toStringAsFixed(m < 10 ? 1 : 0)}M";
+    }
+
+    return value.toString();
+  }
+}

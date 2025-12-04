@@ -24,7 +24,7 @@ class SettingDialog extends ConsumerWidget {
       child: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: const AssetImage('assets/images/ui/dialog/item_dialog_v2.png'),
+            image: const AssetImage('assets/images/common/dialog_cream2.png'),
             fit: BoxFit.fill,
           ),
           boxShadow: [

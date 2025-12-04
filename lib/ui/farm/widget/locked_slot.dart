@@ -4,7 +4,6 @@ import 'package:myplantapp_ver1/l10n/app_localizations.dart';
 import 'package:myplantapp_ver1/ui/common/dialog/simple_inform_dialog.dart';
 import 'package:myplantapp_ver1/ui/common/user_notifier.dart';
 import 'package:myplantapp_ver1/ui/farm/dialog/slot_unlock_dialog.dart';
-import 'package:myplantapp_ver1/ui/farm/farm_notifier.dart';
 
 class LockedSlot extends ConsumerWidget {
   const LockedSlot({super.key});
@@ -30,7 +29,6 @@ class LockedSlot extends ConsumerWidget {
               child: GestureDetector(
                 onTap: () async{
                   final potPrice = await nf.slotPrice();
-                  debugPrint("🔓 ロック解除画像がクリックされました！");
                   final decision = await showDialog<bool>(
                       context: context,
                       builder: (_) => SlotUnlockDialog(potPrice: potPrice)
@@ -55,7 +53,7 @@ class LockedSlot extends ConsumerWidget {
                   }
                 },
                 child: Image.asset(
-                  'assets/images/pot/pot_grey.webp', // ← 任意の画像パス
+                  'assets/images/items/pot_grey.webp', // ← 任意の画像パス
                   height: imageHeight,
                   fit: BoxFit.contain,
                 ),

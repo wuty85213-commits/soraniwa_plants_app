@@ -16,7 +16,7 @@ class DialogHeader extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/ui/dialog/dialog_header.png'),
+            image: AssetImage('assets/images/common/dialog_header.png'),
             fit: BoxFit.fill,
           ),
           boxShadow: [

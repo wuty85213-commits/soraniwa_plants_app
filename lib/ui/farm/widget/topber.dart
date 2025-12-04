@@ -10,7 +10,7 @@ Widget buildTopBar(BuildContext context){
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
       decoration: const BoxDecoration(
         image: const DecorationImage(
-          image: AssetImage('assets/images/ui/appbar/appbar_vine_v1.png'),
+          image: AssetImage('assets/images/common/appbar_vine.png'),
           fit: BoxFit.cover, // ← 画像を全体にフィットさせる
         ),
         //color: Colors.white,

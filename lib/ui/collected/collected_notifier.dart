@@ -108,10 +108,10 @@ class CollectedNotifier extends _$CollectedNotifier {
   String getcompleteImage(List<Collected> collectedList) {
     if(collectedList.any((c) => c.variant == Variant.GOLD)){
       if(collectedList.any((c) => c.variant == Variant.RAINBOW)){
-        return "assets/images/collected/icons/goldrainbow_crown.png";
-      } else { return "assets/images/collected/icons/gold_crown.png";}
+        return "assets/images/collected/crown_goldrainbow.webp";
+      } else { return "assets/images/collected/crown_gold.webp";}
     } else if (collectedList.any((c) => c.variant == Variant.RAINBOW)){
-      return "assets/images/collected/icons/rainbow_crown.png";
+      return "assets/images/collected/crown_rainbow.webp";
     } else {
       return "";
     }

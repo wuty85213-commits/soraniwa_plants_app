@@ -54,7 +54,7 @@ class FertilizerSelectDialogState extends ConsumerState<FertilizerSelectDialog> 
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-              image: AssetImage('assets/images/ui/dialog/item_dialog_v2.png'),
+              image: AssetImage('assets/images/common/dialog_cream2.png'),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.circular(20),
@@ -88,15 +88,15 @@ class FertilizerSelectDialogState extends ConsumerState<FertilizerSelectDialog> 
               if(solidOptions.isNotEmpty)...[
                 Row(
                   children: [
-                    Image.asset('assets/icons/coin.png', width: 22, height: 22),
+                    //Image.asset('assets/icons/coin.webp', width: 22, height: 22), //todo gazou差し替え
                     const SizedBox(width: 6),
                     Text(l.enum_ItemTypeGB, style: TextStyle(fontWeight: FontWeight.bold)),
                   ],
                 ),
                 DropdownButtonFormField<Inventory>(
                   value: solidFertilizer,
-                  hint: const Text(
-                    "なし",
+                  hint: Text(
+                    l.none,
                     style: TextStyle(
                       color: Colors.grey,
                     ),
@@ -120,7 +120,7 @@ class FertilizerSelectDialogState extends ConsumerState<FertilizerSelectDialog> 
                 // 液体肥料
                 Row(
                   children: [
-                    Image.asset('assets/icons/coin.png', width: 22, height: 22),
+                    //Image.asset('assets/icons/coin.png', width: 22, height: 22),
                     const SizedBox(width: 6),
                     Text(l.enum_ItemTypeRBRow, style: TextStyle(fontWeight: FontWeight.bold)),
                   ],
@@ -151,7 +151,7 @@ class FertilizerSelectDialogState extends ConsumerState<FertilizerSelectDialog> 
                 // 幸運の肥料
                 Row(
                   children: [
-                    Image.asset('assets/icons/coin.png', width: 22, height: 22),
+                    //Image.asset('assets/icons/coin.png', width: 22, height: 22),
                     const SizedBox(width: 6),
                     Text(l.enum_ItemTypeRBSuper, style: TextStyle(fontWeight: FontWeight.bold)),
                   ],

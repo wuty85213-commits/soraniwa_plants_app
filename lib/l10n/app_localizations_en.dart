@@ -247,7 +247,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get ach_locked => 'Not Achieved';
 
   @override
-  String get ach_received => 'Unclaimed';
+  String get ach_received => 'claimed';
 
   @override
   String get ach_achievementReward => 'AchievementReward';
@@ -268,13 +268,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get store_text2 => 'Do you want to proceed with this purchase?';
 
   @override
-  String get store_text3 => 'Purchase completed';
+  String get store_text3 => 'Purchase completed!';
 
   @override
   String get store_text4 => 'Do you want to proceed with this purchase?';
 
   @override
-  String get store_text5 => 'Sale completed';
+  String get store_text5 => 'Sale completed!';
 
   @override
   String get store_text6 => 'There are no items to sell';

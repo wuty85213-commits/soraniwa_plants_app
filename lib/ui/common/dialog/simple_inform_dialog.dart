@@ -27,7 +27,7 @@ class SimpleInfoDialog extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/images/ui/dialog/dialog_header.png'),
+                image: AssetImage('assets/images/common/dialog_header.png'),
                 fit: BoxFit.fill,
               ),
               boxShadow: [
@@ -59,7 +59,7 @@ class SimpleInfoDialog extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage('assets/images/ui/dialog/dialog_body.png'),
+                image: const AssetImage('assets/images/common/dialog_body.png'),
                 fit: BoxFit.fill,
               ),
               boxShadow: [

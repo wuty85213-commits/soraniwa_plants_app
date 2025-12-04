@@ -2,6 +2,7 @@ import 'dart:math';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
 import 'package:myplantapp_ver1/core/sound/sound_manager.dart';
 import 'package:myplantapp_ver1/domain/model/user_plant.dart';
@@ -27,6 +28,8 @@ class AnimatedPlant extends ConsumerStatefulWidget {
 
 class AnimatedPlantState extends ConsumerState<AnimatedPlant>
     with TickerProviderStateMixin {
+
+  final log = AppLogger.tag("Animated Plant🦑");
 
   late AnimationController _harvestController;
   late AnimationController _waterController;
@@ -89,7 +92,7 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
     // ✅ デバッグ出力
     _removeController.addListener(() {
       // 値が変化したら毎フレーム出力
-      debugPrint("💧 growY: ${_opacity_remove.value.toStringAsFixed(3)}");
+      log.d("💧 growY: ${_opacity_remove.value.toStringAsFixed(3)}");
     });
   }
 
@@ -103,7 +106,7 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
 
   /// 🍎 収穫アニメーション
   Future<void> playHarvestAnimation() async {
-    debugPrint("🍎 playHarvestAnimation start");
+    log.d("🍎 playHarvestAnimation start");
     setState(() => _showParticles = true);
     await _harvestController.forward(from: 0);
     await Future.delayed(const Duration(seconds: 1));
@@ -114,7 +117,7 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
 
   /// 💧 水やりアニメーション
   Future<void> playWaterAnimation() async {
-    debugPrint("💧 playWaterAnimation called");
+    log.d("💧 playWaterAnimation called");
     SoundManager.playWaterOnce();
     if (!_waterController.isAnimating) {
       setState(() => _showWaterDrops = true);
@@ -127,7 +130,7 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
 
   ///撤去アニメーション
   Future<void> playRemoveAnimation() async {
-    debugPrint("🍎 playRemoveAnimation start");
+    log.d("🍎 playRemoveAnimation start");
     await _removeController.forward(from: 0);
     await Future.delayed(const Duration(seconds: 1));
     _removeController.reset();
@@ -135,7 +138,7 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
 
   @override
   Widget build(BuildContext context) {
-    debugPrint("FarmAnimatedPlant build (slot${widget.slotIndex})");
+    // log.d("FarmAnimatedPlant build (slot${widget.slotIndex})");
     final farmAsync = ref.watch(farmNotifierProvider);
 
     return farmAsync.when(
@@ -155,11 +158,8 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
                 final animeWidth = (constraints.maxWidth / 3).floor();
 
                 // 収穫時のスケールとフェード
-                print('SizedBox.expand constraints: ${constraints.maxWidth} x ${constraints.maxHeight}');
-                debugPrint(
-                    "opacity = ${_opacity.value.toStringAsFixed(2)} , "
-                        "remove = ${_opacity_remove.value.toStringAsFixed(2)}"
-                );
+                //log.d('SizedBox.expand constraints: ${constraints.maxWidth} x ${constraints.maxHeight}');
+                // log.d("opacity = ${_opacity.value.toStringAsFixed(2)} , ""remove = ${_opacity_remove.value.toStringAsFixed(2)}");
                 return SizedBox.expand(
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -186,6 +186,7 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
                           ),
                         ),
 
+                        // 💧 水滴アニメーション
                         if (_showWaterDrops) ...List.generate(3, (i) {
                           final random = Random();
                           return Positioned(
@@ -194,19 +195,6 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
                             child: WaterDrop(delay: i * 200),
                           );
                         }),
-
-                        /*
-                        // 💧 水滴アニメーション
-                        if (_showWaterDrops) ...List.generate(3, (i) {
-                          final random = Random();
-                          return Positioned(
-                            top: 0,
-                            left: 60 + random.nextInt(40).toDouble(),
-                            child: WaterDrop(delay: i * 200),
-                          );
-                        }),
-
-                         */
 
                         // 🌈 収穫時の粒子アニメーション
                         if (_showParticles)
@@ -234,13 +222,13 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
                                   String waterIcon;
                                   switch (condition) {
                                     case PlantCondition.wet:
-                                      waterIcon = 'assets/icons/drop.webp'; // 通常青アイコン
+                                      waterIcon = 'assets/icons/raindrop.webp'; // 通常青アイコン
                                       break;
                                     case PlantCondition.dry || PlantCondition.wither:
-                                      waterIcon = 'assets/icons/drop_grey.webp'; // 灰色アイコン
+                                      waterIcon = 'assets/icons/raindrop_grey.webp'; // 灰色アイコン
                                       break;
                                     default:
-                                      waterIcon = 'assets/icons/drop.webp';
+                                      waterIcon = 'assets/icons/raindrop.webp';
                                   }
 
                                   // 枯れた場合は灰色バーを表示
@@ -248,7 +236,7 @@ class AnimatedPlantState extends ConsumerState<AnimatedPlant>
                                     return Opacity(
                                       opacity: 0.7,
                                       child: Image.asset(
-                                        'assets/images/ui/gauge/body_green.png', // ← 枯れ専用ゲージがあればこちらに
+                                        'assets/images/common/gauge_green.png', // ← 枯れ専用ゲージがあればこちらに
                                         width: 80,
                                         height: 16,
                                         fit: BoxFit.fill,

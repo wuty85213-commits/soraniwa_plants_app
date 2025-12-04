@@ -67,25 +67,57 @@ flutter:
     - assets/plants_en.json
     - assets/items_ja.json
     - assets/items_en.json
-    - assets/icons/coin.webp
-    - assets/icons/item.webp
-    - assets/icons/coin.png
-    - assets/icons/seed.png
-    - assets/icons/crown.png
-    - assets/icons/drop.webp
-    - assets/icons/drop_grey.webp
-    - assets/icons/locked_silver.webp
-    - assets/icons/locked_gold.webp
-    - assets/icons/petal.webp
     - assets/icons/bee.webp
     - assets/icons/butterfly_1.webp
     - assets/icons/butterfly_2.webp
     - assets/icons/butterfly_3.webp
-    - assets/icons/app_splash.webp
-    - assets/images/pot/pot.webp
-    - assets/images/pot/pot_grey.webp
-    - assets/images/pot/pot_lemon.webp
-    - assets/images/pot/pot_gold.webp
+    - assets/icons/coin.webp
+    - assets/icons/item.webp
+    - assets/icons/locked_gold.webp
+    - assets/icons/locked_silver.webp
+    - assets/icons/petal.webp
+    - assets/icons/raindrop.webp
+    - assets/icons/raindrop_grey.webp
+    - assets/images/common/appbar_vine.png
+    - assets/images/common/bt_ad.png
+    - assets/images/common/bt_brown.png
+    - assets/images/common/bt_green.png
+    - assets/images/common/bt_grey.png
+    - assets/images/common/bt_lightblue.png
+    - assets/images/common/bt_red.png
+    - assets/images/common/bt_sell.png
+    - assets/images/common/card_paper.png
+    - assets/images/common/dialog_body.png
+    - assets/images/common/dialog_cream1.png
+    - assets/images/common/dialog_cream2.png
+    - assets/images/common/dialog_header.png
+    - assets/images/common/gauge_frame.png
+    - assets/images/common/gauge_green.png
+    - assets/images/common/gauge_orange.png
+    - assets/images/common/gauge_yellow.png
+    - assets/images/common/sunburst.jpg
+    - assets/images/collected/body_normal.png
+    - assets/images/collected/body_gold.png
+    - assets/images/collected/body_rainbow.png
+    - assets/images/collected/card_cream.png
+    - assets/images/collected/card_grey.png
+    - assets/images/collected/crown_gold.webp
+    - assets/images/collected/crown_rainbow.webp
+    - assets/images/collected/crown_goldrainbow.webp
+    - assets/images/collected/ex_normal.webp
+    - assets/images/collected/ex_gold.webp
+    - assets/images/collected/ex_rainbow.webp
+    - assets/images/collected/header_normal.png
+    - assets/images/collected/header_gold.png
+    - assets/images/collected/header_rainbow.png
+    - assets/images/collected/frame_rich.png
+    - assets/images/achievement/box_close.webp
+    - assets/images/achievement/box_grey.webp
+    - assets/images/achievement/box_open.webp
+    - assets/images/achievement/frame_black.webp
+    - assets/images/achievement/frame_gold.webp
+    - assets/images/achievement/frame_rainbow.webp
+    - assets/images/achievement/treasure.webp
     - assets/images/plants/st0.webp
     - assets/images/plants/seed_a_st1.webp
     - assets/images/plants/seed_b_st1.webp
@@ -276,71 +308,19 @@ flutter:
     - assets/images/items/pot_pink.webp
     - assets/images/items/pot_white.webp
     - assets/images/items/pot_starplant.webp
-    - assets/images/pot/pot.png
-    - assets/images/pot/pot_grey.png
-    - assets/images/ui/appbar/appbar_vine.png
-    - assets/images/ui/appbar/appbar_vine_v1.png
-    - assets/images/ui/bg/home_bg.png
-    - assets/images/ui/bg/home.png
-    - assets/images/ui/bg/bg_store.png
-    - assets/images/ui/bg/collect_bg.png
-    - assets/images/ui/bg/sunburst.jpg
-    - assets/images/ui/bg/tutorial1_ja.png
-    - assets/images/ui/bg/tutorial2_ja.png
-    - assets/images/ui/bg/tutorial3_ja.png
-    - assets/images/ui/bg/tutorial1_en.png
-    - assets/images/ui/bg/tutorial2_en.png
-    - assets/images/ui/bg/tutorial3_en.png
-    - assets/images/ui/button/blue.png
-    - assets/images/ui/button/button_bg.png
-    - assets/images/ui/button/button_red.png
-    - assets/images/ui/button/button_bg_red.png
-    - assets/images/ui/button/grey.png
-    - assets/images/ui/button/brown.png
-    - assets/images/ui/button/green.png
-    - assets/images/ui/button/red.png
-    - assets/images/ui/button/skyblue.png
-    - assets/images/ui/button/red_v1.svg
-    - assets/images/ui/button/red_v2.png
-    - assets/images/ui/button/red_v1.png
-    - assets/images/ui/button/grey_v1.svg
-    - assets/images/ui/button/grey_v1.png
-    - assets/images/ui/button/ad.png
-    - assets/images/ui/card/card_bg1.png
-    - assets/images/ui/card/card_bg.png
-    - assets/images/ui/dialog/dialog_bg_confirm.png
-    - assets/images/ui/dialog/dialog_body.png
-    - assets/images/ui/dialog/dialog_header.png
-    - assets/images/ui/gauge/body_green.png
-    - assets/images/ui/gauge/body_yellow.png
-    - assets/images/ui/gauge/frame_green.png
-    - assets/images/collected/bg_sunlawn.png
-    - assets/images/collected/icons/ex_normal.png
-    - assets/images/collected/icons/ex_gold.png
-    - assets/images/collected/icons/ex_rainbow.png
-    - assets/images/collected/icons/gold_crown.png
-    - assets/images/collected/icons/rainbow_crown.png
-    - assets/images/collected/icons/goldrainbow_crown.png
-    - assets/images/collected/card/card_grey.png
-    - assets/images/collected/dialog/body_normal.png
-    - assets/images/collected/dialog/body_gold.png
-    - assets/images/collected/dialog/body_rainbow.png
-    - assets/images/collected/dialog/header_normal.png
-    - assets/images/collected/dialog/header_gold.png
-    - assets/images/collected/dialog/header_rainbow.png
-    - assets/images/ui/dialog/item_dialog.png
-    - assets/images/ui/dialog/item_dialog_v1.png
-    - assets/images/ui/dialog/item_dialog_v2.png
-    - assets/images/ui/dialog/item_dialog.svg
-    - assets/images/collected/frame/collect_frame.png
-    - assets/images/achievement/icons/box_close.png
-    - assets/images/achievement/icons/box_grey.png
-    - assets/images/achievement/icons/box_open.png
-    - assets/images/achievement/frame/frame_black.png
-    - assets/images/achievement/frame/frame_gold.png
-    - assets/images/achievement/frame/frame_rainbow.png
-    - assets/images/achievement/bg_achievement.png
-    - assets/images/achievement/treasure.webp
+    - assets/images/items/pot_grey.webp
+    - assets/bg/bg_achievement.png
+    - assets/bg/bg_farm.png
+    - assets/bg/bg_store.png
+    - assets/bg/bg_sunlawn.png
+    - assets/bg/home_main_en.png
+    - assets/bg/home_main_ja.png
+    - assets/bg/tutorial1_en.png
+    - assets/bg/tutorial1_ja.png
+    - assets/bg/tutorial2_en.png
+    - assets/bg/tutorial2_ja.png
+    - assets/bg/tutorial3_en.png
+    - assets/bg/tutorial3_ja.png
     - assets/sounds/sample_1.mp3
     - assets/sounds/success.mp3
     - assets/sounds/farm_bg.mp3

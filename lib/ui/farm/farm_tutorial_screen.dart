@@ -30,6 +30,7 @@ class FarmTutorialScreen extends ConsumerWidget {
 
     // pop直後にダイアログを出す
     Future.microtask(() {
+      final l = AppLocalizations.of(context)!;
       showDialog(
         context: context,
         builder: (_) {
@@ -37,7 +38,7 @@ class FarmTutorialScreen extends ConsumerWidget {
             SoundManager.playHarvest();
           });
           return RewardDialog(
-              title: 'チュートリアル達成報酬',
+              title: l.farm_tutorialReward,
               coins: 500,
               items: [(101, 3), (500, 1)]
           );
@@ -65,8 +66,8 @@ class FarmTutorialScreen extends ConsumerWidget {
                 children: [
                   Image.asset(
                       (code == 'ja')
-                          ?'assets/images/ui/bg/tutorial1_ja.png'
-                          :'assets/images/ui/bg/tutorial1_en.png',
+                          ?'assets/bg/tutorial1_ja.png'
+                          :'assets/bg/tutorial1_en.png',
                       width: screenWidth * 0.65),
                   Container(
                     decoration: BoxDecoration(
@@ -102,8 +103,8 @@ class FarmTutorialScreen extends ConsumerWidget {
                 children: [
                   Image.asset(
                       (code == 'ja')
-                          ?'assets/images/ui/bg/tutorial2_ja.png'
-                          :'assets/images/ui/bg/tutorial2_en.png',
+                          ?'assets/bg/tutorial2_ja.png'
+                          :'assets/bg/tutorial2_en.png',
                       width: screenWidth * 0.65),
                   Container(
                     decoration: BoxDecoration(
@@ -140,8 +141,8 @@ class FarmTutorialScreen extends ConsumerWidget {
                 children: [
                   Image.asset(
                       (code == 'ja')
-                          ?'assets/images/ui/bg/tutorial3_ja.png'
-                          :'assets/images/ui/bg/tutorial3_en.png',
+                          ?'assets/bg/tutorial3_ja.png'
+                          :'assets/bg/tutorial3_en.png',
                       width: screenWidth * 0.65),
                   Container(
                     decoration: BoxDecoration(

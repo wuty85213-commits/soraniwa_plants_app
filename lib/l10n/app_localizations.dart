@@ -575,7 +575,7 @@ abstract class AppLocalizations {
   /// No description provided for @ach_received.
   ///
   /// In en, this message translates to:
-  /// **'Unclaimed'**
+  /// **'claimed'**
   String get ach_received;
 
   /// No description provided for @ach_achievementReward.
@@ -617,7 +617,7 @@ abstract class AppLocalizations {
   /// No description provided for @store_text3.
   ///
   /// In en, this message translates to:
-  /// **'Purchase completed'**
+  /// **'Purchase completed!'**
   String get store_text3;
 
   /// No description provided for @store_text4.
@@ -629,7 +629,7 @@ abstract class AppLocalizations {
   /// No description provided for @store_text5.
   ///
   /// In en, this message translates to:
-  /// **'Sale completed'**
+  /// **'Sale completed!'**
   String get store_text5;
 
   /// No description provided for @store_text6.

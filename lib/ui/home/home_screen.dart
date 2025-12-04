@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:myplantapp_ver1/core/language/locale_notifier.dart';
 import 'package:myplantapp_ver1/l10n/app_localizations.dart';
 import 'package:myplantapp_ver1/ui/achievememt/achievement_screen.dart';
 import 'package:myplantapp_ver1/ui/collected/collected_screen.dart';
@@ -7,12 +9,14 @@ import 'package:myplantapp_ver1/ui/home/menu_button.dart';
 import 'package:myplantapp_ver1/ui/home/setting_dialog.dart';
 import 'package:myplantapp_ver1/ui/store/store_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final l = AppLocalizations.of(context)!;
+    final locale = ref.read(localeNotifierProvider).value;
+    final code = locale?.languageCode ?? 'ja';
     final buttons = [
       {'label': l.garden, 'onTap': () {
         Navigator.push(
@@ -46,7 +50,7 @@ class HomeScreen extends StatelessWidget {
         children: [
 
           Image.asset(
-            'assets/images/ui/bg/home_bg.png',
+            'assets/bg/bg_farm.png',
             fit: BoxFit.cover,
           ),
 
@@ -58,7 +62,11 @@ class HomeScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   // 上のイメージ
-                  Image.asset('assets/images/ui/bg/home.png'),
+                  Image.asset(
+                    code == "ja"
+                      ? 'assets/bg/home_main_ja.png'
+                      : 'assets/bg/home_main_en.png'
+                  ),
 
                   // ボタン群
                   Column(

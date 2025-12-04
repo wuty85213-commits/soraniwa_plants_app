@@ -26,7 +26,7 @@ class RewardDialog extends ConsumerWidget {
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-            image: AssetImage('assets/images/ui/dialog/item_dialog_v2.png'),
+            image: AssetImage('assets/images/common/dialog_cream2.png'),
             fit: BoxFit.fill,
           ),
           borderRadius: BorderRadius.circular(20),
@@ -61,11 +61,11 @@ class RewardDialog extends ConsumerWidget {
                   children: [
                     const Positioned.fill(child: SparkleField()) ,
                     RotatingClippedBackground(
-                      imagePath: 'assets/images/ui/bg/sunburst.jpg', // ← あなたの画像
+                      imagePath: 'assets/images/common/sunburst.jpg', // ← あなたの画像
                       scale: 2.5,
                       size: 200,
                       child: Image.asset(
-                        'assets/images/achievement/treasure.webp', //todo 画像差し替える
+                        'assets/images/achievement/treasure.webp',
                         height: 120,
                       ),
                     ),
@@ -87,7 +87,7 @@ class RewardDialog extends ConsumerWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       //const SizedBox(width: 80),
-                      Image.asset('assets/icons/coin.png', height: 24),
+                      Image.asset('assets/icons/coin.webp', height: 24),
                       const SizedBox(width: 8),
                       Text("+${coins} ${l.coins}"),
                     ],
@@ -108,7 +108,7 @@ class RewardDialog extends ConsumerWidget {
 
                       // アイテム画像（itemId からマスター検索することが多い）
                       Image.asset(
-                        itemMs?.imageRes ?? "assets/icons/coin.png",   //todo デフォルトitemアイコンを追加する
+                        itemMs?.imageRes ?? "assets/icons/item.webp",
                         height: 24,
                       ),
 

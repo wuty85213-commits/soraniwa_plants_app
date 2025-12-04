@@ -35,7 +35,7 @@ class ConfirmBuyDialog extends StatelessWidget {
             width: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/ui/dialog/dialog_header.png'),
+              image: AssetImage('assets/images/common/dialog_header.png'),
               fit: BoxFit.fill,
             ),
             boxShadow: [
@@ -69,7 +69,7 @@ class ConfirmBuyDialog extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage('assets/images/ui/dialog/dialog_body.png'),
+                image: const AssetImage('assets/images/common/dialog_body.png'),
                 fit: BoxFit.fill,
               ),
               boxShadow: [
@@ -99,7 +99,7 @@ class ConfirmBuyDialog extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(sellItem.imageRes ?? 'assets/icons/coin.png',
+                    Image.asset(sellItem.imageRes,
                         width: 30, height: 30),
                     const SizedBox(width: 10),
                     Text( "${sellItem.name}   × ${selectedQty}",
@@ -121,10 +121,10 @@ class ConfirmBuyDialog extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('assets/icons/coin.png',
+                    Image.asset('assets/icons/coin.webp',
                         width: 30, height: 30),
                     const SizedBox(width: 10),
-                    Text( "${sellItem.price * selectedQty} （${l.coinsConsumed}）",
+                    Text( "${sellItem.price * selectedQty}  (${l.coinsConsumed})",
                         style: const TextStyle(
                           fontSize: 15, color: Color(0xFF4B3E2B), fontWeight: FontWeight.w500,)),
                   ],

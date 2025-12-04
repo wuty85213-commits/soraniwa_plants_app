@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:myplantapp_ver1/data/entity/inventory_entity.dart';
 import 'package:myplantapp_ver1/data/entity/item_master_entity.dart';
-import 'package:myplantapp_ver1/data/entity/user_entity.dart';
 import 'package:myplantapp_ver1/l10n/app_localizations.dart';
 import 'package:myplantapp_ver1/ui/common/widget/cancel_button.dart';
 import 'package:myplantapp_ver1/ui/common/widget/dialog_header.dart';
 import 'package:myplantapp_ver1/ui/common/widget/red_button.dart';
-import 'package:myplantapp_ver1/ui/store/dialogs/success_sell_dialog.dart';
 
 class ConfirmSellDialog extends StatelessWidget {
   final ItemMasterEntity soldItem;
@@ -34,7 +31,7 @@ class ConfirmSellDialog extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage('assets/images/ui/dialog/dialog_body.png'),
+                image: const AssetImage('assets/images/common/dialog_body.png'),
                 fit: BoxFit.fill,
               ),
               boxShadow: [
@@ -64,7 +61,7 @@ class ConfirmSellDialog extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(soldItem.imageRes ?? 'assets/icons/coin.png',
+                    Image.asset(soldItem.imageRes,
                         width: 30, height: 30),
                     const SizedBox(width: 10),
                     Text( "${soldItem.name}   × ${quantity}",
@@ -86,12 +83,22 @@ class ConfirmSellDialog extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset('assets/icons/coin.png',
+                    Image.asset('assets/icons/coin.webp',
                         width: 30, height: 30),
                     const SizedBox(width: 10),
-                    Text( "+ ${sellingPrice} （${l.coinsGained}）",
-                        style: const TextStyle(
-                          fontSize: 15, color: Color(0xFF4B3E2B), fontWeight: FontWeight.w500,)),
+                    Flexible(
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          "+ $sellingPrice（${l.coinsGained}）",
+                          style: const TextStyle(
+                            fontSize: 15,
+                            color: Color(0xFF4B3E2B),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
 

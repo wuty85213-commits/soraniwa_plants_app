@@ -21,7 +21,7 @@ class CreditDialog extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
-            image: AssetImage('assets/images/ui/dialog/item_dialog_v2.png'),
+            image: AssetImage('assets/images/common/dialog_cream2.png'),
             fit: BoxFit.fill,
           ),
           boxShadow: [

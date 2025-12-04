@@ -48,7 +48,7 @@ class AchievementCard extends ConsumerWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(0),
                 child: Image.asset(
-                  'assets/images/ui/card/card_bg.png',
+                  'assets/images/common/card_paper.png',
                   fit: BoxFit.cover,
                   width: double.infinity,
                   height: double.infinity,
@@ -76,9 +76,9 @@ class AchievementCard extends ConsumerWidget {
                   width: 64,
                   height: 64,
                   child: Image.asset(
-                      !achWithFlag.unlocked ?"assets/images/achievement/icons/box_grey.png"
-                          :achWithFlag.rewarded ?"assets/images/achievement/icons/box_open.png"
-                          :"assets/images/achievement/icons/box_close.png"
+                      !achWithFlag.unlocked ?"assets/images/achievement/box_grey.webp"
+                          :achWithFlag.rewarded ?"assets/images/achievement/box_open.webp"
+                          :"assets/images/achievement/box_close.webp"
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -146,11 +146,11 @@ class AchievementCard extends ConsumerWidget {
 
   _getFrameImage(String){
     if (String.contains("GOLD")){
-      return "assets/images/achievement/frame/frame_gold.png";
+      return "assets/images/achievement/frame_gold.webp";
     } else if (String.contains("RAINBOW")){
-      return "assets/images/achievement/frame/frame_rainbow.png";
+      return "assets/images/achievement/frame_rainbow.webp";
     } else {
-      return "assets/images/achievement/frame/frame_black.png";
+      return "assets/images/achievement/frame_black.webp";
     }
   }
 }

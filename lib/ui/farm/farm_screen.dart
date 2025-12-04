@@ -150,7 +150,7 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
               children: [
                 Positioned.fill(
                   child: Image.asset(
-                    'assets/images/ui/bg/home_bg.png',
+                    'assets/bg/bg_farm.png',
                     fit: BoxFit.cover,
                   )
                 ),
@@ -177,7 +177,7 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
                             final plantKey = plantKeys[index];
                             final pot = pots.firstWhereOrNull((e) => e.slotIndex == index);
                             final potMs = masterNf.findItemById(pot?.itemId ?? 500);
-                            final potPath = potMs?.imageRes ?? 'assets/images/pot/pot.webp';
+                            final potPath = potMs?.imageRes ?? 'assets/images/items/pot.webp';
                             if (index >= user.unlockedSlots) {
                               return LockedSlot();
                             }
@@ -186,16 +186,12 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
                                     (p) => p.slotIndex == index
                             );
                             if (plant == null) {
-                              debugPrint("🪴 Slot[$index]: ❌ plant = null （userPlantsに一致するスロットがありません）");
-                            } else {
-                              debugPrint(
-                                  "🪴 Slot[$index]: ✅ plant found! "
-                                      "id=${plant.plantId}, variant=${plant.variant}, slot=${plant.slotIndex}");
+                              log.e('🪴 Slot[$index]: ❌ plant = null （userPlantsに一致するスロットがありません）');
                             }
                             final plantMS = plantMasters
                                 .firstWhereOrNull(
                                     (m) => m.id == plant?.plantId && m.variant == plant?.variant);
-                            debugPrint("Slot[$index] プラントマスターデータ[${plantMS?.name ?? 'null'}${plantMS?.variant ?? 'null'}] ");
+                            //log.d("Slot[$index] プラントマスターデータ[${plantMS?.name ?? 'null'}${plantMS?.variant ?? 'null'}] ");
 
                             return InkWell(
                               key: slotkey,
@@ -267,7 +263,7 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
                                   log.d('プラントを植え付けました');
 
                                 } else {
-                                  debugPrint('プラントがタップされました！');
+                                  log.d('プラントがタップされました！');
                                   _showPlantPopup(
                                       context, slotkey, plantKey,
                                       plant,index);
@@ -285,8 +281,7 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
                       )
                     ),
                   ],
-                )
-                /*
+                ),
                 // 📢 === ここがバナー広告を固定表示する部分 ===
                 const Align(
                   alignment: Alignment.bottomCenter,
@@ -295,8 +290,6 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
                     child: BannerAdWidget(),  // ← バナー広告widget
                   ),
                 ),
-
-                 */
               ],
             );
           },
@@ -366,8 +359,8 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
         final potMaster = masterNf.findItemById(pot?.itemId ?? 500);
         return LayoutBuilder(
           builder: (context, constraints) {
-            print('Grid slot constraints: ${constraints.maxWidth} x ${constraints.maxHeight}');
-            print('Slot[$index] InkWell constraints: ${constraints}');
+            //log.d('Grid slot constraints: ${constraints.maxWidth} x ${constraints.maxHeight}');
+            //log.d('Slot[$index] InkWell constraints: ${constraints}');
 
             return Column(
               mainAxisAlignment: MainAxisAlignment.end,
@@ -388,7 +381,7 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
                 Expanded(
                   flex: 3,
                   child: Image.asset(
-                    potMaster?.imageRes ?? 'assets/images/pot/pot.webp',
+                    potMaster?.imageRes ?? 'assets/images/items/pot.webp',
                     fit: BoxFit.contain,
                     alignment: Alignment.topCenter, // 上端を基準に表示（接地ライン）
                   ),
@@ -478,23 +471,8 @@ class _FarmScreenState extends ConsumerState<FarmScreen> with WidgetsBindingObse
                       }
                   );
                   achieveNotifier.checkAchievements();
-                  /*
-                  // 次のフレームで実行（ダイアログが完全に閉じた後）
-                  WidgetsBinding.instance.addPostFrameCallback((_) async {
-                    // ちょっと遅延を入れるとより確実（UI安定後）
-                    await Future.delayed(const Duration(milliseconds: 300));
-                    await plantKey.currentState?.playHarvestAnimation();
-                    showDialog(
-                        context: context,
-                        builder: (_) => HarvestResultDialog(result: result)
-                    );
-                    achieveNotifier.checkAchievements();
-                  });
-
-                   */
-                  // 次のフレームで実行（ダイアログが完全に閉じた後）
                 } else {
-                  debugPrint('収穫処理にエラーが発生しました！');
+                  log.d('収穫処理にエラーが発生しました！');
                   Navigator.pop(context);
                 }
               },

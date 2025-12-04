@@ -20,7 +20,7 @@ class MenuButton extends StatelessWidget {
         alignment: Alignment.center,
         children: [
           Image.asset(
-            'assets/images/ui/button/brown.png',
+            'assets/images/common/bt_brown.png',
             height: btnHeight,
             width: btnWidth,
             fit: BoxFit.contain,

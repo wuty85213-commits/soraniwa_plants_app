@@ -61,7 +61,7 @@ class _WaterActionPopupState extends State<WaterActionPopup>
           children: [
             // 🪴 背景カード画像（吹き出し）
             Image.asset(
-              "assets/images/ui/card/card_bg1.png",
+              "assets/images/collected/card_cream.png",
               width: 148,
               fit: BoxFit.contain,
             ),
@@ -99,8 +99,8 @@ class _WaterActionPopupState extends State<WaterActionPopup>
                           children: [
                             Image.asset(
                               isWaterDisabled
-                                  ? 'assets/images/ui/button/grey_v1.png'
-                                  : 'assets/images/ui/button/blue.png',
+                                  ? 'assets/images/common/bt_grey.png'
+                                  : 'assets/images/common/bt_lightblue.png',
                               width: 112,
                               height: 32,
                               fit: BoxFit.fill,
@@ -159,8 +159,8 @@ class _WaterActionPopupState extends State<WaterActionPopup>
                             children: [
                               Image.asset(
                                 widget.growthStage == 3
-                                    ? 'assets/images/ui/button/red_v1.png'
-                                    : 'assets/images/ui/button/grey_v1.png',
+                                    ? 'assets/images/common/bt_red.png'
+                                    : 'assets/images/common/bt_grey.png',
                                 width: 112,
                                 height: 32,
                                 fit: BoxFit.fill,
@@ -209,7 +209,7 @@ class _WaterActionPopupState extends State<WaterActionPopup>
                           alignment: Alignment.center,
                           children: [
                             Image.asset(
-                              'assets/images/ui/button/brown.png',
+                              'assets/images/common/bt_brown.png',
                               width: 112,
                               height: 32,
                               fit: BoxFit.fill,

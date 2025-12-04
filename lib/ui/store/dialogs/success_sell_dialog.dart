@@ -39,7 +39,7 @@ class SuccessSellDialog extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: const AssetImage('assets/images/ui/dialog/dialog_body.png'),
+                image: const AssetImage('assets/images/common/dialog_body.png'),
                 fit: BoxFit.fill,
               ),
               boxShadow: [
@@ -76,10 +76,9 @@ class SuccessSellDialog extends StatelessWidget {
                 const SizedBox(height: 8),
 
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const SizedBox(width: 90),
-                    Image.asset(soldItem.imageRes ?? 'assets/icons/coin.png',
+                    Image.asset(soldItem.imageRes,
                         width: 30, height: 30),
                     const SizedBox(width: 10),
                     Text( "- ${quantity}",
@@ -88,11 +87,12 @@ class SuccessSellDialog extends StatelessWidget {
                   ],
                 ),
 
+                const SizedBox(height: 8),
+
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const SizedBox(width: 90),
-                    Image.asset("assets/icons/coin.png",
+                    Image.asset("assets/icons/coin.webp",
                         width: 30, height: 30),
                     const SizedBox(width: 10),
                     Text( "+ ${sellingPrice}",

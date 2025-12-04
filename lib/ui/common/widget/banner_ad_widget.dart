@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:myplantapp_ver1/core/app_logger.dart';
 
 class BannerAdWidget extends StatefulWidget {
   const BannerAdWidget({super.key});
@@ -9,6 +10,7 @@ class BannerAdWidget extends StatefulWidget {
 }
 
 class _BannerAdWidgetState extends State<BannerAdWidget> {
+  final log = AppLogger.tag("BannerAd");
   BannerAd? _bannerAd;
   bool _isLoaded = false;
 
@@ -26,7 +28,7 @@ class _BannerAdWidgetState extends State<BannerAdWidget> {
         },
         onAdFailedToLoad: (ad, error) {
           ad.dispose();
-          debugPrint("❌ Banner failed: $error");
+          log.e("❌ Banner failed: $error");
         },
       ),
     )..load();

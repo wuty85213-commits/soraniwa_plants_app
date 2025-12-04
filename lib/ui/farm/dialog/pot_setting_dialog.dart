@@ -28,7 +28,7 @@ class PotSettingDialog extends ConsumerWidget {
           return Container(
             decoration: BoxDecoration(
               image: const DecorationImage(
-                image: AssetImage("assets/images/ui/dialog/item_dialog_v2.png"),
+                image: AssetImage("assets/images/common/dialog_cream2.png"),
                 fit: BoxFit.fill,
               ),
               borderRadius: BorderRadius.circular(20),
@@ -115,7 +115,7 @@ class PotSettingDialog extends ConsumerWidget {
                                             child: Padding(
                                               padding: const EdgeInsets.only(top: 14), // ← アイコンを下にずらす
                                               child: Image.asset(
-                                                item?.imageRes ?? "assets/images/pot/pot.png",
+                                                item?.imageRes ?? "assets/icons/item.webp",
                                                 fit: BoxFit.contain,
                                               ),
                                             ),

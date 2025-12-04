@@ -24,19 +24,21 @@ class AchievementFilterSheet extends ConsumerWidget {
           const SizedBox(height: 20),
 
           CheckboxListTile(
-            title: Text(l.ach_unlocked),
-            value: state.showUnlocked,
-            activeColor: Colors.black,      // ← 塗りつぶし色を変える
-            checkColor: Colors.white,
-            onChanged: (v) => notifier.toggleShowUnlocked(v!),
-          ),
-          CheckboxListTile(
             title: Text(l.ach_locked),
             value: state.showLocked,
             activeColor: Colors.black,      // ← 塗りつぶし色を変える
             checkColor: Colors.white,
             onChanged: (v) => notifier.toggleShowLocked(v!),
           ),
+
+          CheckboxListTile(
+            title: Text(l.ach_unlocked),
+            value: state.showUnlocked,
+            activeColor: Colors.black,      // ← 塗りつぶし色を変える
+            checkColor: Colors.white,
+            onChanged: (v) => notifier.toggleShowUnlocked(v!),
+          ),
+
           CheckboxListTile(
             title: Text(l.ach_received),
             value: state.showReceived,

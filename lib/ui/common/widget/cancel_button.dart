@@ -51,7 +51,7 @@ class CancelButton extends StatelessWidget {
             alignment: Alignment.center,
             children: [
               Image.asset(
-                'assets/images/ui/button/grey_v1.png',
+                'assets/images/common/bt_grey.png',
                 width: buttonWidth,
                 height: buttonHeight,
                 fit: BoxFit.fill,

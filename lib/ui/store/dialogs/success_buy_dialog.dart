@@ -39,7 +39,7 @@ class SuccessBuyDialog extends StatelessWidget {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('assets/images/ui/dialog/dialog_header.png'),
+                      image: AssetImage('assets/images/common/dialog_header.png'),
                       fit: BoxFit.fill,
                     ),
                     boxShadow: [
@@ -73,7 +73,7 @@ class SuccessBuyDialog extends StatelessWidget {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: const AssetImage('assets/images/ui/dialog/dialog_body.png'),
+                    image: const AssetImage('assets/images/common/dialog_body.png'),
                     fit: BoxFit.fill,
                   ),
                   boxShadow: [
@@ -111,10 +111,9 @@ class SuccessBuyDialog extends StatelessWidget {
                     const SizedBox(height: 8),
 
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(width: 90),
-                        Image.asset(sellItem.imageRes ?? 'assets/icons/coin.png',
+                        Image.asset(sellItem.imageRes,
                             width: 30, height: 30),
                         const SizedBox(width: 10),
                         Text( "+ ${quantity}",
@@ -126,10 +125,9 @@ class SuccessBuyDialog extends StatelessWidget {
                     const SizedBox(height: 8),
 
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const SizedBox(width: 90),
-                        Image.asset("assets/icons/coin.png",
+                        Image.asset("assets/icons/coin.webp",
                             width: 30, height: 30),
                         const SizedBox(width: 10),
                         Text( "- ${buyPrice}",

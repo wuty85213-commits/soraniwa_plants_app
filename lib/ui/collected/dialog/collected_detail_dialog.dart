@@ -252,25 +252,25 @@ class _CollectedDetailDialogState extends State<CollectedDetailDialog> {
   String _getHeaderImage(Variant variant) {
     switch (variant) {
       case Variant.NORMAL:
-        return 'assets/images/collected/dialog/header_normal.png';
+        return 'assets/images/collected/header_normal.png';
       case Variant.GOLD:
-        return 'assets/images/collected/dialog/header_gold.png';
+        return 'assets/images/collected/header_gold.png';
       case Variant.RAINBOW:
-        return 'assets/images/collected/dialog/header_rainbow.png';
+        return 'assets/images/collected/header_rainbow.png';
       default:
-        return 'assets/images/collected/dialog/header_normal.png';
+        return 'assets/images/collected/header_normal.png';
     }
   }
   String _getBodyImage(Variant variant) {
     switch (variant) {
       case Variant.NORMAL:
-        return 'assets/images/collected/dialog/body_normal.png';
+        return 'assets/images/collected/body_normal.png';
       case Variant.GOLD:
-        return 'assets/images/collected/dialog/body_gold.png';
+        return 'assets/images/collected/body_gold.png';
       case Variant.RAINBOW:
-        return 'assets/images/collected/dialog/body_rainbow.png';
+        return 'assets/images/collected/body_rainbow.png';
       default:
-        return 'assets/images/collected/dialog/body_normal.png';
+        return 'assets/images/collected/body_normal.png';
     }
   }
 }

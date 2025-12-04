@@ -5,6 +5,7 @@ import 'package:device_info_plus/device_info_plus.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest_all.dart' as tz;
 
@@ -30,7 +31,7 @@ class NotificationService {
     required String body,
     required Duration delay,
   }) async {
-    debugPrint('schedule起動!');
+    // debugPrint('schedule起動!');
     final scheduled = DateTime.now().add(delay);
 
     await _plugin.zonedSchedule(

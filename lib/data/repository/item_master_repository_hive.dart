@@ -8,12 +8,12 @@ import 'package:myplantapp_ver1/data/entity/item_master_entity.dart';
 import 'package:myplantapp_ver1/domain/repository/i_item_master_repository.dart';
 
 class ItemMasterRepositoryHive implements IItemMasterRepository {
+  final log = AppLogger.tag('ItemMasterRepo📜');
   final Box<ItemMasterEntity> _box;
   bool _loaded = false;
   List<ItemMasterEntity> _cache = [];
 
   ItemMasterRepositoryHive(this._box);
-  final log = AppLogger.tag('ItemMasterRepo📜');
 
   @override
   Future<void> loadAll({String localeCode = 'ja'}) async {
@@ -30,7 +30,7 @@ class ItemMasterRepositoryHive implements IItemMasterRepository {
       return;
     }
     // ✅ Hiveが空なら assets JSON からロード
-    debugPrint('🌱 Loading Plant Master from JSON...');
+    log.d('🌱 Loading Plant Master from JSON...');
 
     // --- JSONから初期ロード ---
     try {

@@ -49,7 +49,7 @@ class RedButton extends StatelessWidget {
             alignment: Alignment.center,
             children: [
               Image.asset(
-                'assets/images/ui/button/red_v1.png',
+                'assets/images/common/bt_red.png',
                 width: buttonWidth,
                 height: buttonHeight,
                 fit: BoxFit.fill,
