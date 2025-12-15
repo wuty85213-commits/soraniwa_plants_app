@@ -1,9 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';
-import 'package:myplantapp_ver1/core/config/result.dart';
 import 'package:myplantapp_ver1/data/datasource/user_local_datasource.dart';
-import 'package:myplantapp_ver1/data/entity/user_entity.dart';
 import 'package:myplantapp_ver1/domain/mappers.dart';
 import 'package:myplantapp_ver1/domain/model/pot.dart';
 import 'package:myplantapp_ver1/domain/model/user.dart';

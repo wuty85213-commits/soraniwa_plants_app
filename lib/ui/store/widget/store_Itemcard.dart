@@ -1,10 +1,7 @@
-
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
-import 'package:myplantapp_ver1/data/entity/inventory_entity.dart';
 import 'package:myplantapp_ver1/data/entity/item_master_entity.dart';
-import 'package:myplantapp_ver1/data/entity/user_entity.dart';
 import 'package:myplantapp_ver1/domain/model/inventory.dart';
 import 'package:myplantapp_ver1/domain/model/user.dart';
 import 'package:myplantapp_ver1/l10n/app_localizations.dart';
@@ -87,9 +84,7 @@ class StoreItemCard extends StatelessWidget {
                   padding: (sellItem.itemType == ItemType.decoration)
                       ? const EdgeInsets.only(top: 14)
                       : const EdgeInsets.only(top: 0) ,
-                  child: sellItem.imageRes != null
-                      ? Image.asset(sellItem.imageRes!, fit: BoxFit.contain)
-                      : const Icon(Icons.local_florist, size: 32, color: Colors.grey),
+                  child: Image.asset(sellItem.imageRes, fit: BoxFit.contain)
                   )
                 ),
                 const SizedBox(width: 12),
@@ -100,8 +95,11 @@ class StoreItemCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      AutoSizeText(
                         sellItem.name,
+                        maxLines: 1,
+                        minFontSize: 12,
+                        overflow: TextOverflow.ellipsis,
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 16,

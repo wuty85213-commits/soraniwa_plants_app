@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/domain/model/pot.dart';
 import 'package:myplantapp_ver1/domain/model/user.dart';
 import 'package:myplantapp_ver1/domain/repository/i_user_repository.dart';

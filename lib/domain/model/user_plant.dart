@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
-import 'package:myplantapp_ver1/ui/farm/farm_notifier.dart';
 
 part 'user_plant.freezed.dart';
 

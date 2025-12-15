@@ -1,6 +1,7 @@
 // --------------------------------------------------------------------
 // 商品カード（背景画像＋半透明オーバーレイ）
 // --------------------------------------------------------------------
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';

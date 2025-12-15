@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:hive/hive.dart';
 import 'package:intl/intl.dart';
@@ -13,7 +12,9 @@ void loadRewardedAd() {
   RewardedAd.load(
     adUnitId: Platform.isAndroid
         ? "ca-app-pub-3940256099942544/5224354917"
-        : "ca-app-pub-3940256099942544/1712485313",
+        : "ca-app-pub-3940256099942544/1712485313", //test Id
+
+    // Myapp ca-app-pub-1156628205301218/2992026239
     request: const AdRequest(),
     rewardedAdLoadCallback: RewardedAdLoadCallback(
       onAdLoaded: (ad) {

@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/domain/model/achievement_list.dart';
 import 'package:myplantapp_ver1/domain/model/achievement_model.dart';
 import 'package:myplantapp_ver1/domain/model/inventory.dart';
@@ -252,6 +252,8 @@ class AchievementNotifier extends _$AchievementNotifier {
             id: uuid.v4(),
             itemId: masterItem.id,
             itemType: masterItem.itemType,
+            variant: masterItem.variant,
+            attribute: masterItem.attribute,
             quantity: rewardItem.quantity
         );
         _inventoryRepo.save(newItem);

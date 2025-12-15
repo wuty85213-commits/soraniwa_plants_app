@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:myplantapp_ver1/data/entity/collected_entity.dart';
 import 'package:myplantapp_ver1/data/entity/inventory_entity.dart';
 import 'package:myplantapp_ver1/data/entity/pot_entity.dart';

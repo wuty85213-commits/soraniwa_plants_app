@@ -1,4 +1,4 @@
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/core/sound/sound_manager.dart';
 import 'package:myplantapp_ver1/domain/repository/i_user_repository.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';

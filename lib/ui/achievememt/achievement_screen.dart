@@ -6,7 +6,7 @@ import 'package:myplantapp_ver1/l10n/app_localizations.dart';
 import 'package:myplantapp_ver1/ui/achievememt/achievement_notifier.dart';
 import 'package:myplantapp_ver1/ui/achievememt/widget/achievement_card.dart';
 import 'package:myplantapp_ver1/ui/achievememt/widget/achievement_filtersheet.dart';
-import 'package:myplantapp_ver1/ui/common/widget/banner_ad_widget.dart';
+import 'package:myplantapp_ver1/core/ad/banner_ad_widget.dart';
 
 class AchievementScreen extends ConsumerWidget {
   const AchievementScreen({super.key});
@@ -184,7 +184,6 @@ class AchievementScreen extends ConsumerWidget {
                     ),
                   ],
                 ),
-                /*
                 // 📢 === ここがバナー広告を固定表示する部分 ===
                 const Align(
                   alignment: Alignment.bottomCenter,
@@ -193,7 +192,6 @@ class AchievementScreen extends ConsumerWidget {
                     child: BannerAdWidget(),  // ← バナー広告widget
                   ),
                 ),
-                 */
               ],
             );
           },

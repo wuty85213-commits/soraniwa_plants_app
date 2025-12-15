@@ -1,6 +1,6 @@
 import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/data/entity/item_master_entity.dart';
 import 'package:myplantapp_ver1/data/entity/plant_master_entity.dart';
 import 'package:myplantapp_ver1/ui/master/master_data_state.dart';

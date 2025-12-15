@@ -151,7 +151,7 @@
   },
   {
     "id": 201,
-    "name": "Growth Booster Fertilizer",
+    "name": "Growth Fertilizer",
     "description": "Fertilizer that speeds up plant growth.",
     "itemType": "growthBoost",
     "price": 100,

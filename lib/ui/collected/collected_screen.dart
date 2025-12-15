@@ -4,7 +4,7 @@ import 'package:myplantapp_ver1/core/config/enums.dart';
 import 'package:myplantapp_ver1/l10n/app_localizations.dart';
 import 'package:myplantapp_ver1/ui/collected/collected_notifier.dart';
 import 'package:myplantapp_ver1/ui/collected/dialog/collected_detail_dialog.dart';
-import 'package:myplantapp_ver1/ui/common/widget/banner_ad_widget.dart';
+import 'package:myplantapp_ver1/core/ad/banner_ad_widget.dart';
 import 'package:myplantapp_ver1/ui/master/master_data_notifier.dart';
 
 // ==== 図鑑画面 ====
@@ -300,7 +300,6 @@ class CollectedScreen extends ConsumerWidget {
                           )
                       ],
                     ),
-                    /*
                     // 📢 === ここがバナー広告を固定表示する部分 ===
                     const Align(
                       alignment: Alignment.bottomCenter,
@@ -309,8 +308,6 @@ class CollectedScreen extends ConsumerWidget {
                         child: BannerAdWidget(),  // ← バナー広告widget
                       ),
                     ),
-
-                     */
                   ]
                 );
               }

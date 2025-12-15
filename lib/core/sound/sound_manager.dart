@@ -31,7 +31,6 @@ class SoundManager {
 
     await player.play(AssetSource("sounds/water.mp3"));
 
-    // 300ms後にフェードアウト
     Future.delayed(const Duration(milliseconds: 300), () {
       player.setVolume(0.0);
       player.stop();
@@ -44,7 +43,6 @@ class SoundManager {
 
     await player.play(AssetSource("sounds/water.mp3"));
 
-    // 1秒再生したら止める
     await Future.delayed(const Duration(seconds: 1));
     player.stop();
   }

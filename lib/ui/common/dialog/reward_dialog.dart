@@ -48,7 +48,7 @@ class RewardDialog extends ConsumerWidget {
                 maxLines: 1,
                 minFontSize: 10,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 16),
 

@@ -1,4 +1,3 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -342,16 +341,4 @@ class StoreScreen extends ConsumerWidget {
       }
     );
   }
-}
-
-// --------------------------------------------------------------------
-// 商品データ
-// --------------------------------------------------------------------
-class ItemData {
-  final String name;
-  final String description;
-  final int price;
-  final String? imagePath;
-
-  ItemData(this.name, this.description, this.price, this.imagePath);
 }

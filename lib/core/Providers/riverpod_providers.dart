@@ -34,7 +34,7 @@ final log_RP = AppLogger.tag("Riverpod_Provider🚀");
 final hiveInitProvider = FutureProvider<void>((ref) async {
   await HiveBoxManager.init(); // ← Hive.initFlutter + env dir設定
 
-  //await HiveBoxManager.resetAll();
+  //await HiveBoxManager.resetAll(); //実機テスト用
 
   await Future.wait([
     HiveBoxManager.openBox<UserEntity>('userBox'),
@@ -79,6 +79,7 @@ final plantBoxProvider = FutureProvider<Box<PlantMasterEntity>>((ref) async {
 final itemBoxProvider = FutureProvider<Box<ItemMasterEntity>>((ref) async {
   return Hive.box<ItemMasterEntity>('itemMasterBox_${EnvConfig.flavor}');
 });
+
 // -------------------------
 // Repository Providers
 // -------------------------
@@ -124,5 +125,5 @@ final itemMasterRepositoryProvider =
 // AchievementList
 // -------------------------
 final achievementListProvider = Provider<List<Achievement>>((ref) {
-  return achievementList; // 今ある固定リスト
+  return achievementList;
 });

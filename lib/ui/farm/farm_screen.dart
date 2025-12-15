@@ -11,7 +11,7 @@ import 'package:myplantapp_ver1/ui/achievememt/achievement_notifier.dart';
 import 'package:myplantapp_ver1/ui/common/achievement_snackber_listener.dart';
 import 'package:myplantapp_ver1/ui/common/inventory_notifier.dart';
 import 'package:myplantapp_ver1/ui/common/user_notifier.dart';
-import 'package:myplantapp_ver1/ui/common/widget/banner_ad_widget.dart';
+import 'package:myplantapp_ver1/core/ad/banner_ad_widget.dart';
 import 'package:myplantapp_ver1/ui/farm/dialog/confirm_plant_dialog.dart';
 import 'package:myplantapp_ver1/ui/farm/dialog/fertilozer_select_dialog.dart';
 import 'package:myplantapp_ver1/ui/farm/farm_notifier.dart';

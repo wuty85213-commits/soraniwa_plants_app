@@ -1,7 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/domain/model/inventory.dart';
 import 'package:myplantapp_ver1/domain/model/item_amount.dart';
 import 'package:myplantapp_ver1/ui/master/master_data_notifier.dart';

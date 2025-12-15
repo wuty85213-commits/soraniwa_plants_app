@@ -100,7 +100,6 @@ class AchievementDialog extends ConsumerWidget {
                     children: [
                       const SizedBox(width: 40),
 
-                      // アイテム画像（itemId からマスター検索することが多い）
                       Image.asset(
                         itemMs?.imageRes ?? "assets/icons/item.webp",
                         height: 24,

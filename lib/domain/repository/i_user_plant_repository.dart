@@ -1,5 +1,3 @@
-import 'package:myplantapp_ver1/core/config/result.dart';
-import 'package:myplantapp_ver1/data/entity/user_plant_entity.dart';
 import 'package:myplantapp_ver1/domain/model/user_plant.dart';
 
 abstract class IUserPlantRepository {

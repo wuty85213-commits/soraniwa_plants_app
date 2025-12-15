@@ -1,7 +1,7 @@
 import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/env.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/domain/model/inventory.dart';
 import 'package:myplantapp_ver1/domain/model/user_plant.dart';
 import 'package:myplantapp_ver1/ui/collected/collected_notifier.dart';
@@ -116,7 +116,7 @@ class DebugDataInjector extends _$DebugDataInjector {
         itemType: ItemType.seed,
         variant: Variant.NORMAL,
         attribute: Attribute.leafy,
-        quantity: 3
+        quantity: 1100
     );
     await inventoryRepo.save(newObject4);
 
@@ -126,15 +126,7 @@ class DebugDataInjector extends _$DebugDataInjector {
     );
     await userNf.save(updated);
 
-    await collNf.addCollected(2, Variant.NORMAL, Attribute.leafy);
-    await collNf.addCollected(3, Variant.NORMAL, Attribute.leafy);
-    await collNf.addCollected(4, Variant.NORMAL, Attribute.leafy);
-    // await collNf.addCollected(5, Variant.NORMAL, Attribute.leafy);
-    await collNf.addCollected(6, Variant.NORMAL, Attribute.leafy);
-
-
-
-
+    //await collNf.allAdd();
 
     log.d('✅ テストデータ注入完了');
 

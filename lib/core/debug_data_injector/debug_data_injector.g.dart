@@ -6,7 +6,7 @@ part of 'debug_data_injector.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$debugDataInjectorHash() => r'b0ab28a8c7de33fb919b2e4264726a511f33b427';
+String _$debugDataInjectorHash() => r'f66dc2f13f6956fb2bacbfebc966b386f103141c';
 
 /// See also [DebugDataInjector].
 @ProviderFor(DebugDataInjector)

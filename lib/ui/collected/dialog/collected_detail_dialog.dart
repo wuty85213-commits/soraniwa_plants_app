@@ -1,4 +1,5 @@
 // ==== 詳細ダイアログ ====
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
@@ -92,8 +93,10 @@ class _CollectedDetailDialogState extends State<CollectedDetailDialog> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
-                  child: Text(
-                    "No.${current.id} ${current.name}（${current.variant.l10n(context)}）",
+                  child: AutoSizeText(
+                    "No.${current.id} ${current.name}",
+                    maxLines: 1,
+                    minFontSize: 16,
                     style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w700,
@@ -224,7 +227,7 @@ class _CollectedDetailDialogState extends State<CollectedDetailDialog> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text('${l.collected_type}: ${current.attribute.l10n(context)}')
+                      Text('${l.collected_type}: ${current.attribute.l10n(context)}（${current.variant.l10n(context)}）')
                     ],
                   ),
 

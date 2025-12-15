@@ -6,7 +6,7 @@ import 'package:myplantapp_ver1/core/Providers/farm_ticker_provider.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
 import 'package:myplantapp_ver1/core/language/locale_notifier.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/domain/model/harvest_result_model.dart';
 import 'package:myplantapp_ver1/domain/model/inventory.dart';
 import 'package:myplantapp_ver1/domain/model/user_plant.dart';
@@ -148,7 +148,6 @@ class FarmNotifier extends _$FarmNotifier {
 
     await _userPlantRepo.addPlant(newUserPlant);
 
-
     //final time = ( (_growthTimeByRarity(chosenPlant.rarity) * 3)/growthBoost ).floor();
     //await requestExactAlarmPermission();
     //await NotificationService.scheduleHarvestNotification(
@@ -156,8 +155,6 @@ class FarmNotifier extends _$FarmNotifier {
     //  slotIndex: slotIndex,
     //  delayMs: time,
     //);
-
-
 
     await _load();
   }

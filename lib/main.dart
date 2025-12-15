@@ -6,7 +6,7 @@ import 'package:myplantapp_ver1/core/ad/ad.dart';
 import 'package:myplantapp_ver1/core/debug_data_injector/debug_data_injector.dart';
 import 'package:myplantapp_ver1/core/hive/hive_adapters.dart';
 import 'package:myplantapp_ver1/core/language/locale_notifier.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:myplantapp_ver1/l10n/app_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -17,30 +17,31 @@ import 'package:timezone/timezone.dart' as tz;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  //tz.initializeTimeZones();
+
+  //tz.initializeTimeZones(); //通知用
   //tz.setLocalLocation(tz.getLocation("Asia/Tokyo"));
+
   await MobileAds.instance.initialize();
   loadRewardedAd();
+
   // ✅ Hive初期化
   await Hive.initFlutter();
   // ✅ Hiveアダプタ登録
   registerAllHiveAdapters();
-  // ✅ Riverpod有効化
 
   final container = ProviderContainer();
   await container.read(hiveInitProvider.future);
-  //await container.read(debugDataInjectorProvider.notifier).injectIfNeeded();
+  //await container.read(debugDataInjectorProvider.notifier).injectIfNeeded(); // 実機テスト用
 
   await AudioPlayer.global.setAudioContext(
     AudioContextConfig(
-      focus: AudioContextConfigFocus.mixWithOthers, // ← これ！！
-      // 必要なら
+      focus: AudioContextConfigFocus.mixWithOthers,
     ).build(),
   );
 
   runApp(
     UncontrolledProviderScope(
-      container: container, // 同じコンテナをアプリ全体で使う
+      container: container,
       child: const MyApp(),
     ),
   );
@@ -93,73 +94,3 @@ class MyApp extends ConsumerWidget {
     );
   }
 }
-
-class _AppLoaded extends StatelessWidget {
-  const _AppLoaded();
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Farm App',
-      debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
-    );
-  }
-}
-
-/*
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  await HiveBoxManager.init();
-
-  final app = AppInitializer.instance;
-  await app.initialize();
-
-  // --- 確認用ログ ---
-
-  // ✅ Debugデータ注入 (Env.isDev時のみ)
-  await DebugDataInjector.injectIfNeeded(
-    masterCache: app.masterDataCache,
-    userRepo: app.userRepository,
-    userPlantRepo: app.userPlantRepository,
-    inventoryRepo: app.inventoryRepository,
-  );
-
-  runApp(MyApp(app));
-}
-
-class MyApp extends StatelessWidget {
-  final AppInitializer app;
-  const MyApp(this.app, {super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        Provider<IUserRepository>(create: (_) => app.userRepository),
-        Provider<IUserPlantRepository>(create: (_) => app.userPlantRepository),
-        Provider<IInventoryRepository>(create: (_) => app.inventoryRepository),
-        Provider<ICollectedRepository>(create: (_) => app.collectedRepository),
-        Provider<MasterDataCache>(create: (_) => app.masterDataCache),
-        Provider<FarmService>(create: (_) => app.farmService),
-        Provider<StoreService>(create: (_) => app.storeService),
-        Provider<AchievementService>(create: (_) => app.achievementService),
-
-
-        ChangeNotifierProvider<FarmViewModel>(create: (_) => app.farmViewModel),
-        ChangeNotifierProvider<StoreViewModel>(create: (_) => app.storeViewModel),
-        ChangeNotifierProvider<CollectedViewModel>(create: (_) => app.collectedViewModel),
-        ChangeNotifierProvider<AchievementViewModel>(create: (_) => app.achievementViewModel),
-
-      ],
-      child: const MaterialApp(
-        title: 'Farm App',
-        debugShowCheckedModeBanner: false,
-        home: HomeScreen()
-      ),
-    );
-  }
-}
-
- */

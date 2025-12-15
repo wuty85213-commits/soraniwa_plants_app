@@ -14,3 +14,15 @@ class Inventory with _$Inventory {
     required int quantity,
   }) = _Inventory;
 }
+
+extension GetQuantity on Inventory {
+  int get QtyFormatted {
+    final value = quantity;
+
+    if (value >= 1000) {
+      int m = 999;
+      return m;
+    }
+    return value;
+  }
+}

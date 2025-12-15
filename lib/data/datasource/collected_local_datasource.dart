@@ -1,11 +1,9 @@
-import 'package:collection/collection.dart';
 import 'package:hive/hive.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';
-import 'package:myplantapp_ver1/core/config/enums.dart';
 import 'package:myplantapp_ver1/data/entity/collected_entity.dart';
 
 class CollectedLocalDataSource {
-  final log = AppLogger.tag("CollectedDatabase📁");
+  final log = AppLogger.tag("CollectedDataSource📁");
   final Box<CollectedEntity> _box;
   CollectedLocalDataSource(this._box);
 

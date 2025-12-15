@@ -42,7 +42,7 @@ class AchievementReward {
 }
 
 class ItemReward {
-  final int itemId; // 例: "ITEM_SEED_01" や "FERTILIZER_A"
+  final int itemId;
   final int quantity;
 
   const ItemReward({required this.itemId, required this.quantity});

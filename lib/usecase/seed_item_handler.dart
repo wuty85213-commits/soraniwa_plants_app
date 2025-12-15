@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
 import 'package:myplantapp_ver1/data/entity/plant_master_entity.dart';

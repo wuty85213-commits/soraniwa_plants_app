@@ -2,7 +2,7 @@
 import 'package:collection/collection.dart';
 import 'package:myplantapp_ver1/core/app_logger.dart';
 import 'package:myplantapp_ver1/core/config/enums.dart';
-import 'package:myplantapp_ver1/core/Providers/riverpod.dart';
+import 'package:myplantapp_ver1/core/Providers/riverpod_providers.dart';
 import 'package:myplantapp_ver1/domain/model/collected.dart';
 import 'package:myplantapp_ver1/domain/repository/i_collected_repository.dart';
 import 'package:myplantapp_ver1/ui/master/master_data_notifier.dart';
@@ -100,8 +100,9 @@ class CollectedNotifier extends _$CollectedNotifier {
   }
 
   Future<int> collectedCount(Variant variant) async{
-    final collected = _collectedRepo.getAll().where((p) => p.variant == variant);
-    final collectedCount = collected.map((p) => p.id).toSet().length;
+    final list = _collectedRepo.getAll();
+    final l = list.where((p) => p.variant == variant);
+    final collectedCount = l.map((p) => p.id).toSet().length;
     return collectedCount;
   }
 
@@ -128,4 +129,17 @@ class CollectedNotifier extends _$CollectedNotifier {
     if (list == null) return false;
     return list.any((i) => i.plantId == plantId && i.variant == variant);
   }
+
+  /*
+  ///（デバッグ用）
+  Future<void> allAdd() async {
+    final masterData = await ref.read(masterDataNotifierProvider.future);
+    final plants = masterData.plants.where((c) => c.variant == Variant.NORMAL).toList();
+
+    for (final plant in plants) {
+      addCollected(plant.id, Variant.NORMAL, plant.attribute);
+    }
+    log.d('allAdd 完了!${plants.length}');
+  }
+  */
 }

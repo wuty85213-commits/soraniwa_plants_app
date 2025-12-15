@@ -1,7 +1,7 @@
 name: myplantapp_ver1
 description: "A new Flutter project."
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.0+2
 environment:
   sdk: ^3.9.2
 dependencies:
@@ -31,6 +31,7 @@ dependencies:
   device_info_plus:
   change_app_package_name: ^1.1.0
   url_launcher:
+
 
 
 dev_dependencies:

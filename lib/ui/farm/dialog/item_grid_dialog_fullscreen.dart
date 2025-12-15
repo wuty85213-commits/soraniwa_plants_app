@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:myplantapp_ver1/domain/model/inventory.dart';
 import 'package:myplantapp_ver1/l10n/app_localizations.dart';
 import 'package:myplantapp_ver1/ui/common/inventory_notifier.dart';
 import 'package:myplantapp_ver1/ui/common/widget/cancel_button.dart';
@@ -82,7 +83,7 @@ class ItemGridDialogFullScreen extends ConsumerWidget {
                                   right: 3,
                                   bottom: 3,
                                   child: Text(
-                                    "x${inv.quantity}",
+                                    "x${inv.QtyFormatted}",
                                     style: const TextStyle(
                                       fontSize: 12,
                                       fontWeight: FontWeight.bold,

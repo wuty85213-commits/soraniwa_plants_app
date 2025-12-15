@@ -6,7 +6,7 @@ part of 'collected_notifier.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$collectedNotifierHash() => r'c34c806925e12c59771abc679315a086a8221907';
+String _$collectedNotifierHash() => r'6be9ec46a09f6a6d4237042a3db4dfe7b10f956a';
 
 /// See also [CollectedNotifier].
 @ProviderFor(CollectedNotifier)
